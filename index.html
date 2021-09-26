@@ -4,450 +4,388 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tino Shop</title>
+    <link rel="shortcut icon" style="border-radius: 50%;" href="./access/img/shortcut.png" type="image/x-icon">
+    <title>MUSIC MP3</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./acess/css/base.css">
-    <link rel="stylesheet" href="./acess/css/grid.css">
-    <link rel="stylesheet" href="./acess/css/pretty.css">
-    <link rel="stylesheet" href="./acess/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./acess/fonts/icofont/icofont.min.css">
-    
+    <link rel="stylesheet" href="./access/fonts/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./access/css/grid.css">
+    <link rel="stylesheet" href="./access/css/pretty.css">
+    <link rel="stylesheet" href="./access/css/main.css">
 </head>
 <body>
-   <div class="app">
-       <header class="header">
-           <div class="grid wide">
-               <!--Header navbar-->
-               <nav class="header__navbar">
-                   <ul class="header__navbar-list">
-                       <li class="header__navbar-item header__navbar-item-qr">
-                            <a href="#" class="header__navbar-item-link">
-                                Shop with Tino Shop, everyone!
-                            </a>
-                            <div class="header__qr">
-                                <a href="#" class="header__qr-download"><img src="./acess/img/qrcode.png" alt="QR code" class="header__qr-img"></a>
-                                <div class="header__qr-app">
-                                    <a href="#" class="header__qr-download"><img src="./acess/img/appstore.png" alt="App Store" class="header__qr-app-download"></a>
-                                    <a href="#" class="header__qr-download"><img src="./acess/img/googplay.png" alt="Google Play" class="header__qr-app-download"></a>
-                                    <a href="#" class="header__qr-download"><img src="./acess/img/appgallery.png" alt="App Gallery" class="header__qr-app-download"></a>
-                                </div>
-                            </div>
-                        </li>
-                       <li class="header__navbar-item header__navbar-item-separate">
-                            Connection
-                            <a href="https://www.facebook.com/profile.php?id=100033986333586" target="_blank" class="header__navbar-item-link"><i class="header-icon icofont-facebook"></i></a>
-                            <a href="https://www.instagram.com/duongnguyenvan506/" target="_blank" class="header__navbar-item-link"><i class="header-icon icofont-instagram"></i></a>
-                    </li>
-                   </ul>
-   
-                   <ul class="header__navbar-list">
-                       <li class="header__navbar-item" id="notify">
-                           <a href="#" class="header__navbar-item-link notify-after"><i class="header-icon icofont-bell-alt"></i>Notify</a>
-                           <div class="message__box message__box-null">
-                               <header class="message__box-header">
-                                   <h3>New notify</h3>
-                               </header>
+    <div class="container-music">
+        <header class="nav">
+            <span class="icon-container">
+                <i class="icofont-rounded-down"></i>
+            </span>
+            <div class="header-heading">
+                <p class="nav-head">New playing</p>
+                <h3 class="nav-content">
+                    Sting 57th & 9th
+                </h3>
+            </div>
+            <span class="icon-container">
+                <i class="icofont-plus"></i>
+            </span>
+        </header>
 
-                                <div class="message__box-info message__box-info-null">
-                                   <div class="message__box-content">
-                                        <img src="./acess/img/message-background.png" alt="" class="message__box-img">
-                                        <p class="message__box-subcontent">Sign in to see notifications</p>
-                                   </div>
+        <div class="cd">
+            <img src="" alt="" class="cd-img">
+        </div>
 
-                                   <div class="message__box-item">
-                                       <button class="message__box-login user__signup">Sign up</button>
-                                       <button class="message__box-login user__login">Log in</button>
-                                   </div>
-                               </div> 
-                           </div>
-
-                        <div class="message__box message__box-full">
-                            <header class="message__box-header">
-                                <h3>New notify</h3>
-                            </header>
-                            
-                            <ul class="message__box-info message__box-info-full">
-                                <li class="message__box-info-item">
-                                    <img src="./acess/img/airpods.jpg" alt="Air pods" class="message__box-full-img">
-
-                                    <div class="message__box-body">
-                                        <h3 class="message__box-infor-content">[Mã ELAP1TR giảm 5% đơn 3TR] Apple AirPods</h3>
-                                        <p class="message__box-infor-description">
-                                            Thiết kế sang trọng, âm thanh đỉnh cao, trang bị tính năng chống ồn chủ động (NFC), điều chỉnh âm thanh (Adaptive EQ), chế độ xuyên âm (Transparency Mode) và âm thanh vòm (Spatial Audio)., Điều khiển thông minh với nút Digital Crown
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="message__box-info-item">
-                                    <img src="./acess/img/opdienthoai.jpg" alt="ốp điẹne thoại" class="message__box-full-img">
-
-                                    <div class="message__box-body">
-                                        <h3 class="message__box-infor-content">Ốp lưng iphone Corgi gắn đào cạnh vuông 5/5s/6/6plus/6s/6splus/</h3>
-                                        <p class="message__box-infor-description">
-                                            Đặc điểm: Chống vỡ
-Thương hiệu điện thoại phù hợp: Dành cho iPhone của Apple
-Đặc điểm model iPhone: IPHONE 11 11 Pro 11 Pro Max XS MAX XR X XS 6 6S 6Plus 6S Plus 7 Plus 8 Plus
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="message__box-info-item">
-                                    <img src="./acess/img/giayvessel.jpg" alt="Giày vesel" class="message__box-full-img">
-
-                                    <div class="message__box-body">
-                                        <h3 class="message__box-infor-content">[Sale sốc 50%] Giày thể thao sneaker X.VESEL Đế gỗ</h3>
-                                        <p class="message__box-infor-description">
-                                            Đế cao 3,5-4cm tôn dáng khi đi
-Đế thiết kế nhẹ, êm chân và giúp bạn đi lâu vẫn cảm thấy thoải mái.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="message__box-viewall">View All</div>
-                        </div>
-
-                       </li>
-                       <li class="header__navbar-item">
-                           <a href="#" class="header__navbar-item-link help"><i class="header-icon icofont-question-circle"></i>Help</a>
-                       </li>
-                       <!-- <li class="header__navbar-item">
-                            <button class="header__navbar-item-button user__signup">Sign up</button>
-                        </li>
-                        <li class="header__navbar-item header__navbar-item-separate header__navbar-item--strong">
-                            <button class="header__navbar-item-button user__login">Log in</button>
-                        </li> -->
-
-                        <li class="header__navbar-item header__navbar-user">                            
-                            <button class="header__navbar-item-button header__navbar-btn-user">
-                                <img src="./acess/img/user.jpg" alt="" class="header__navbar-avata">
-                                <span class="header__navbar-user-name">Nguyen Van Duong</span>
-                            </button>
-
-                            <ul class="header__navbar-user-menu">
-                                <li class="header__navbar-user-menu-item">
-                                    <a href="" class="">Tài khoản của tôi</a>
-                                </li>
-
-                                <li class="header__navbar-user-menu-item">
-                                    <a href="" class="">Địa chỉ của tôi</a>
-                                </li>
-
-                                <li class="header__navbar-user-menu-item">
-                                    <a href="" class="">Đơn mua</a>
-                                </li>
-
-                                <li class="header__navbar-user-menu-item">
-                                    <a href="" class="">Đăg xuất</a>
-                                </li>
-                            </ul>
-                        </li>
-                   </ul>
-               </nav>
-
-               <!--Header contain-->
-               <div class="header__container">
-                   <div class="header__container-logo">
-                       <h1 class="header__container-logo--name">
-                           <a href="">
-                               <i class="icofont-brand-t-mobile"></i>
-                                Tino Shop
-                           </a>
-                        </h1>
-                    </div>
-                    
-                    <div class="search">
-                        <div class="search-pro">
-                            <div class="search__input">
-                                <input value="" type="text" placeholder="Search in the Tino Shop" class="search__input-box">
-                                <div class="search__subinput">
-                                    <a href="" class="sale-50">Perfect diary sale up to 50% <span class="sale-suggest">Gnuine product discount</span></a>   
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="search-inShop">
-                                <div class="search-inShop-select">
-                                    <span>In Shop</span>
-                                    <i class="icofont-rounded-down"></i>
-
-                                    <div class="search-inShop-option">
-                                        <p class="search-inShop-option--motify">In Shop <i class="iconCheck iconCheckInShop icofont-check"></i></p>
-                                        <p class="search-inShop-option--motify">Out Shop <i class="iconCheck icofont-check"></i></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="search__tiSearch">
-                                <button class="search__tiSearch-btn">
-                                    <i class="icofont-search iconfont__search"></i>
-                                </button>
-                            </div>
-
-                        </div>
-
-                        <div class="search__suggest">
-                            <button class="search__suggest-item">Bag</button>
-                            <button class="search__suggest-item">Dress</button>
-                            <button class="search__suggest-item">Coat</button>
-                            <button class="search__suggest-item">Pants</button>
-                            <button class="search__suggest-item">T-shirt</button>
-                            <button class="search__suggest-item">Makeup remover cotton</button>
-                            <button class="search__suggest-item">Crop-top shirt</button>
-                            <button class="search__suggest-item">Oil-free fryer</button>
-                        </div>
-                    </div>
-                    
-                    <div class="header__cart" id="cart">
-                        <button class="header__cart-btn header__cart--after">
-                            <i class="icofont-shopping-cart"></i>
-                            <span class="number-product">3</span>
-                        </button>
-
-                        <div class="header__cart-product header__cart-product--before header__cart-no-cart">
-                            <img src="./acess/img/nocart1.png" alt="" class="no-product">
-                            <p class="header__cart-content">No product</p>
-                        </div>
-
-                        <div class="header__cart-product header__cart-product--before header__cart-yes-cart">
-                            <div class="header__cart-heading">Added product</div>
-
-                            <ul class="header__cart-list">
-                                <li class="header__cart-item">
-                                    
-                                    <img src="./acess/img/airpods.jpg" alt="Air pods" class="header__cart-img">
-                                    <div class="header__cart-infor">
-                                        <div class="header__cart-infor-main">
-                                            <h3 class="header__cart-infor-content">[Mã ELAP1TR giảm 5% đơn 3TR] Apple AirPods</h3>
-                                            <span class="header__cart-product-money--throughline">4.000.000đ</span>
-                                            <span class="header__cart-product-money">2.700.000</span>
-                                            <span class="word-đ">đ</span>
-                                            <span class="header__cart-product-multify">x</span>
-                                            <span class = "header__cart-product-quantity">1</span>
-                                        </div>
-
-                                        <div class="header__cart-infor-body">
-                                            <p class="header__cart-product-type">Phân loại hàng: Bạc</p>
-                                            <span class="header__cart-product-delete">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-
-                                    <img src="./acess/img/opdienthoai.jpg" alt="Ốp" class="header__cart-img">
-                                    <div class="header__cart-infor">
-                                        <div class="header__cart-infor-main">
-                                            <h3 class="header__cart-infor-content">Ốp lưng iphone Corgi gắn đào cạnh vuông 5/5s/6/6plus/6s/6splus/</h3>
-                                            <span class="header__cart-product-money--throughline">50.000đ</span>
-                                            <span class="header__cart-product-money">27.000</span>
-                                            <span class="word-đ">đ</span>
-                                            <span class="header__cart-product-multify">x</span>
-                                            <span class = "header__cart-product-quantity">1</span>
-                                        </div>
-
-                                        <div class="header__cart-infor-body">
-                                            <p class="header__cart-product-type">Phân loại hàng: Bạc</p>
-                                            <span class="header__cart-product-delete">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    
-                                    <img src="./acess/img/giayvessel.jpg" alt="Vessel" class="header__cart-img">
-                                    <div class="header__cart-infor">
-                                        <div class="header__cart-infor-main">
-                                            <h3 class="header__cart-infor-content">[Sale sốc 50%] Giày thể thao sneaker X.VESEL Đế gỗ</h3>
-                                            <span class="header__cart-product-money--throughline">800.000đ</span>
-                                            <span class="header__cart-product-money">680.000</span>
-                                            <span class="word-đ">đ</span>
-                                            <span class="header__cart-product-multify">x</span>
-                                            <span class = "header__cart-product-quantity">1</span>
-                                        </div>
-
-                                        <div class="header__cart-infor-body">
-                                            <p class="header__cart-product-type">Phân loại hàng: Bạc</p>
-                                            <span class="header__cart-product-delete">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            
-                            <div class="header__cart-allproductselect">Xem giỏ hàng</div>
-                        </div>
-                    </div>
+        <div class="navigation">
+            <div class="navigation-item random">
+                <i class="icofont-random"></i>
+            </div>
+            <div class="navigation-item reply">
+                <i class="icofont-ui-reply"></i>
+            </div>
+            <div class="navigation-item play-pause">
+                <div class="p-open">
+                    <i class="icofont-pause"></i>
+                </div>
+                <div class="p-close">
+                    <i class="icofont-play-alt-1"></i>
                 </div>
             </div>
-       </header>
-
-       <div class="container">
-            <div class="grid wide">
-                <div class="row sm-gutter container__body">
-                    <div class="col l-2 container__categary">
-                        <div class="categary__header">
-                            <i class="icofont-search-map categary-icon-map"></i>
-                            <h2 class="categary__header-heading">BỘ LỌC TÌM KIẾM</h2>
-                        </div>
-
-                        <div class="categary__body-content">
-                            <div class="categary-container">
-                                <div class="theo-danh-muc">Theo danh mục</div>
-                                <div class="pretty p-default p-fill p-icon p-pulse categary-item">
-                                    <input type="checkbox">
-                                    <div class="state">
-                                        <i class="icon icofont-verification-check verification-check"></i>
-                                        <label class="dung-cu-nha-bep">Dụng cụ nướng & trang trí bánh (13k+)</label>
-                                    </div>
-                                </div>
-                                <div class="pretty p-default p-fill p-icon p-pulse categary-item">
-                                    <input type="checkbox">
-                                    <div class="state">
-                                        <i class="icon icofont-verification-check verification-check"></i>
-                                        <label class="dung-cu-nha-bep">Thực phẩm và đồ uống (5k+)</label>
-                                    </div>
-                                </div>
-                                <div class="pretty p-default p-fill p-icon p-pulse categary-item">
-                                    <input type="checkbox">
-                                    <div class="state">
-                                        <i class="icon icofont-verification-check verification-check"></i>
-                                        <label class="dung-cu-nha-bep">Văn phòng Phẩm (2k+)</label>
-                                    </div>
-                                </div>
-                                <div class="pretty p-default p-fill p-icon p-pulse categary-item">
-                                    <input type="checkbox">
-                                    <div class="state">
-                                        <i class="icon icofont-verification-check verification-check"></i>
-                                        <label class="dung-cu-nha-bep">Dụng cụ nhà bếp / Khác (1k+)</label>
-                                    </div>
-                                </div>
-                                
-                                
-                                <div class="categary-add">Thêm <i class="icofont-simple-down categary-down"></i></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col l-10 container__body-content">
-                        <div class="container__header">
-                            Sap xep 
-                        </div>
-                    </div>
+            <div class="navigation-item next-song">
+                <i class="icofont-ui-next"></i>
+            </div>
+            <div class="navigation-item volume">
+                <div class="p-volume-open">
+                    <i class="icofont-volume-down"></i>
+                </div>
+                <div class="p-volume-close">
+                    <i class="icofont-volume-off"></i>
                 </div>
             </div>
-       </div>
+            
+        </div>
+        <input type="range" class="progress" id="progress" value="0" step="1" min="0" max="100">
 
-       <footer class="foooter">
-
-       </footer>
-   </div>
-
-   <div class="modal" id="modal-signup">
-       <div class="modal__overlay">
-
-       </div>
-
-       <div class="modal__body">
-            <div class="modal__inner">
-
-                <div class="auth-form">
-                    <div class="auth-form__header">
-                        <h1 class="auth-form__heading">Sign up</h1>
-                        <h2 class="auth-form__btn" id="modal-box-logIn">Log in</h2>
-                    </div>
-
-                    <ul class="auth-form__input">
-                        <li class="auth-form__user">
-                            <span>Phone number:</span> <input type="text" placeholder="Phone number" class="auth-form__input-item">                       
-                        </li>
-                        <li class="auth-form__user">
-                            <span>Email:</span> <input type="email" placeholder="Email" class="auth-form__input-item">
-                        </li>
-                        <li class="auth-form__user">
-                            <span>Password:</span> <input type="password" placeholder="Password" class="auth-form__input-item">
-                        </li>
-                        <li class="auth-form__user">
-                            <span>Again password:</span> <input type="password" placeholder="Again password" class="auth-form__input-item">
-                        </li>
-                    </ul>
-
-                    <p class="auth-form__security">
-                        By registering, you agree to Tino Shop about
-                        <span class="tos">Terms of service</span> & 
-                        <span class="pp">Trivacy policy</span>
-                    </p>
-
-                    <div class="auth-form__confirm">
-                        <h3 class="confirm-return">Return</h3>
-                        <h3 class="confirm-signup">Sign up</h3>
-                    </div>
-
-                </div>
-                
-                <div class="auth-form__footer">
-                    <a href="https://www.facebook.com/" target = "_blank" class="auth-form__society auth-form__fb">
-                        <i class="icofont-facebook icon-auth__fb"></i>
-                        <span class="auth-form__connection">Connect to Facebook</span>
-                    </a>
+        <audio src="" class="audio"></audio>
+    </div>
+    
+    <div class="list-music">
         
-                    <a href="https://accounts.google.com/servicelogin" target = "_blank" class="auth-form__society auth-form__gg">
-                        <img src="./acess/img/google .png" alt="" class="img-auth__gg">
-                        <span class="auth-form__connection">Connect to Google</span>
-                    </a>
-                </div>
+    </div>
+
+    <div class="footer">
+        <span class="icon-footer">
+            <i class="icofont-home"></i>
+        </span>
+        <span class="icon-footer">
+            <i class="icofont-music-note"></i>
+        </span>
+        <span class="icon-footer">
+            <i class="icofont-play-alt-1 icon-play"></i>
+        </span>
+        <span class="icon-footer">
+            <i class="icofont-search"></i>
+        </span>
+        <span class="icon-footer">
+            <i class="icofont-navigation-menu"></i>
+        </span>
+    </div>
+    <script>
+        
+        const cdFather = document.querySelector('.cd')
+        const cd = document.querySelector('.cd-img');
+        const nav_content = document.querySelector('.nav-content');
+        const audio = document.querySelector('.audio');
+        const checkbox = document.querySelector('#checkbox');
+        const playAudio = document.querySelector('.play-pause');
+        const pause = document.querySelector('.p-close');
+        const play = document.querySelector('.p-open');
+        const isPlaying = false;
+
+        const app = {
+            currentIndex:0, //Lấy chỉ mục bằng 0
+            songs:[
+                {
+                    name:'Mashup LoveSongs',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Bùi Anh Tuấn -đã sai từ lúc đầu- nên bây giờ -cạn dòng nước mắt- Love Songs - Cover.mp3',
+                    image:'./access/img/mashup-loveSongs.png'
+                },
+                {
+                    name:'Cưới nhau đi ( yes i do)',
+                    singer:"Bùi Anh Tuấn - Hiền Hồ",
+                    path:'./access/song/Cưới nhau đi ( yes i do) - Bùi Anh Tuấn , Hiền Hồ.mp3',
+                    image:'./access/img/cuoinhaudi.png'
+                },
+                {
+                    name:'Đường ai nấy đi',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Đường Ai Nấy Đi (Lofi Ver.) - Bùi Anh Tuấn x Freak D.mp3',
+                    image:'./access/img/duongainaydi.png'
+                },
+                {
+                    name:'Hẹn một mai',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Hẹn một mai ‣ Bùi Anh Tuấn.mp3',
+                    image:'./access/img/henmotmai.png'
+                },
+                {
+                    name:'Hoang mang',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/HOANG MANG - BÙI ANH TUẤN.mp3',
+                    image:'./access/img/hoangmang.png'
+                },
+                {
+                    name:'Yêu em rất nhiều',
+                    singer:"Hoàng Tôn",
+                    path:'./access/song/HOÀNG TÔN - YÊU EM RẤT NHIỀU.mp3',
+                    image:'./access/img/yeuemratnhieu.png'
+                },
+                {
+                    name:'Lặng yên',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Lặng Yên - Bùi Anh Tuấn @ Swing Lounge.mp3',
+                    image:'./access/img/langyen.png'
+                },
+                {
+                    name:'Mơ hồ',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Mơ Hồ - Bùi Anh Tuấn.mp3',
+                    image:'./access/img/moho.png'
+                },
+                {
+                    name:'Nơi tình yêu bắt đầu',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Nơi Tình Yêu Bắt Đầu - Bùi Anh Tuấn.mp3',
+                    image:'./access/img/noitinhyeubatdau.png'
+                },
+                {
+                    name:'Nơi tình yêu kết thúc',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Nơi Tình Yêu Kết Thúc - Bùi Anh Tuấn.mp3',
+                    image:'./access/img/noitinhyeuketthuc.png'
+                },
+                {
+                    name:'Ta là của nhau',
+                    singer:"Đông Nhi - Ông Cao Thắng",
+                    path:'./access/song/Ta Là Của Nhau - Đông Nhi ft. Ông Cao Thắng - Yeah1 Superstar.mp3',
+                    image:'./access/img/talacuanhau.png'
+                },
+                {
+                    name:'Thuận theo ý trời',
+                    singer:"Bùi Anh Tuấn",
+                    path:'./access/song/Thuận Theo Ý Trời - Bùi Anh Tuấn.mp3',
+                    image:'./access/img/thuantheoytroi.png'
+                }
                 
-            </div>
-            
-        </div>
-   </div>
+            ],
+                
+            render: function () {
+                const htmls = this.songs.map((song,index) => {
+                    return `
+                    <div class="song ${index === this.currentIndex?'active':''}">
+                        <div class="thumb"
+                            style="background-image:url('${song.image}') ;"
+                        >             
+                        </div>
 
-   <div class="modal" id="modal-login">
-        <div class="modal__overlay">
-            <div class="modal__body">
-                <div class="modal__inner">
-
-                    <div class="auth-form">
-                        <div class="auth-form__header">
-                            <h1 class="auth-form__heading">Log in</h1>
-                            <h2 class="auth-form__btn" id="modal-box-signUp">Sign up</h2>
+                        <div class="body">
+                            <h3 class="title">
+                                ${song.name}
+                            </h3>
+                            <p class="author">
+                                ${song.singer}
+                            </p>
                         </div>
-    
-                        <ul class="auth-form__input">
-                            <li class="auth-form__user">
-                                <span>Phone number or Email:</span> <input type="text" placeholder="Phone number/Email" class="auth-form__input-item">                       
-                            </li>
-                            <li class="auth-form__user">
-                                <span>Password:</span> <input type="password" placeholder="Password" class="auth-form__input-item">
-                            </li>                                             
-                        </ul>
-                        <div class="about-password">
-                            <input type="checkbox" class="about-password__remember"><span>Remember password</span>
-                            <span class="about-password__forgot">Forgot password ?</span>
+                        <div class="option">
+                            <i class="option-icon icofont-options"></i>
                         </div>
-    
-                        <div class="auth-form__confirm">
-                            <h3 class="confirm-return">Return</h3>
-                            <h3 class="confirm-signup">Log in</h3>
-                        </div>
-    
                     </div>
-                    
-                    <div class="auth-form__footer">
-                        <a href="https://www.facebook.com/" target = "_blank" class="auth-form__society auth-form__fb">
-                            <i class="icofont-facebook icon-auth__fb"></i>
-                            <span class="auth-form__connection">Connect to Facebook</span>
-                        </a>
-            
-                        <a href="https://accounts.google.com/servicelogin" target = "_blank" class="auth-form__society auth-form__gg">
-                            <img src="./acess/img/google .png" alt="" class="img-auth__gg">
-                            <span class="auth-form__connection">Connect to Google</span>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-   </div>
+                    `
+                })
 
-   <script src="acess/js/tinoshop.js"></script>
+                document.querySelector('.list-music').innerHTML = htmls.join("");
+            },
+            defineProperties: function () {
+                Object.defineProperty(this,'currentSong', {
+                    get: function () {
+                        return this.songs[this.currentIndex]
+                    }
+                })
+            },
+
+            handleEvents: function () {
+                const _this = this;
+                const cdWidth = cd.offsetWidth;
+                const cdHeight = cd.offsetHeight;
+
+                //Xử lí CD quay/dừng
+                const cdAnimate = cdFather.animate([
+                    {transform:'rotate(360deg)'}
+                ],{
+                    duration:20000, //10 giây
+                    iterations : Infinity //Vô hạn
+                })
+                cdAnimate.pause()
+
+                //Xử lí khi phóng to thu nhỏ
+                document.onscroll = function () {
+                    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                    const cdWidthNew = cdWidth - scrollTop;
+                    const cdHeightNew = cdHeight - scrollTop;
+                    cd.style.width = cdWidthNew > 0 ?cdWidthNew + 'px':0;
+                    cd.style.height = cdHeightNew > 0?cdHeightNew + 'px':0;
+
+                    cd.style.opacity = cdWidthNew/cdWidth;
+
+                }
+
+                //Xử lí khi click play
+                playAudio.onclick = function () {
+                    if(!_this.isPlaying){
+                        audio.play();
+                        play.style.display = 'block';
+                        pause.style.display = 'none';
+                      
+                    }else {
+                        audio.pause();
+                        play.style.display = 'none';
+                        pause.style.display = 'block';
+                    }               
+                }
+                //Khi song được play/pause
+                audio.onplay = function () {
+                    _this.isPlaying = true;
+                    cdAnimate.play()
+                }
+
+                audio.onpause = function () {
+                    _this.isPlaying = false;
+                    cdAnimate.pause()
+                }
+
+                
+                //Xử lí tiến độ bài hát
+                const progress = document.querySelector('.progress')
+                audio.ontimeupdate = function () {
+                    
+                    if(audio.duration) {
+                        const progressPercent = Math.floor(audio.currentTime / audio.duration * 100)
+                        progress.value = progressPercent;
+                    }                
+                }
+
+                //Xử lí khi tua song 
+                progress.onchange = function (time) {
+                    const seekTime = audio.duration/100 * time.target.value
+                    audio.currentTime = seekTime
+                }
+
+
+                //Xử lí volumn tắt/bật
+                const volume = document.querySelector('.volume');
+                volume.onclick = function () {
+                    const pVolumeOpen = document.querySelector('.p-volume-open');
+                    const pVolumeClose = document.querySelector('.p-volume-close');
+                    const volumeDefault = audio.volume === 1;
+                    if(volumeDefault) {
+                        audio.volume = 0;
+                        pVolumeOpen.style.display ='none';
+                        pVolumeClose.style.display ='block';
+                    }else {
+                        audio.volume = 1;
+                        pVolumeOpen.style.display ='block';
+                        pVolumeClose.style.display ='none';
+                    }
+                }
+
+                //Xử lí lặp lại bài hát
+                const reply = document.querySelector('.reply');
+                const isLoop = true;
+                reply.onclick = function () {
+                    if(reply.style.color === 'var(--text-color)') {
+                        audio.loop = true;
+                        reply.style.color = 'var(--primary-color)';
+                    }else {
+                        audio.loop = false;
+                        reply.style.color = 'var(--text-color)';
+                    }
+
+                }
+                
+                //Xử lí next bài hát
+                document.querySelector('.next-song').onclick = function () {
+                    if(random.style.color === 'var(--text-color)') {
+                        _this.nextSong()                
+                    }else {
+                        _this.playRandomSong()
+                    }
+                    audio.play()                   
+                    _this.render()
+                    play.style.display = 'block';
+                    pause.style.display = 'none';
+                }
+
+                //Xử lí random song
+                const random = document.querySelector('.random')
+                random.onclick = function (){
+                    if(random.style.color === 'var(--text-color)') {
+                        random.style.color = 'var(--primary-color)';
+                    }else {
+                        random.style.color = 'var(--text-color)';
+                    }
+                }
+
+                //Xử lí auto next song
+                audio.onended = function () {
+                    document.querySelector('.next-song').click()
+                    
+                    _this.render()
+                }
+
+            },
+            loadCurrentSong: function () {
+                cd.src = this.currentSong.image;
+                nav_content.textContent = this.currentSong.name;
+                audio.src = this.currentSong.path;
+            },
+
+            nextSong:function () {
+                this.currentIndex++
+                if(this.currentIndex >=this.songs.length) {
+                    this.currentIndex = 0
+                }
+                this.loadCurrentSong()   
+            },
+
+            playRandomSong: function () {
+                let newIndex
+                do {                
+                    newIndex = Math.floor(Math.random() *this.songs.length)
+                    // const arrayindex = arraySongSelected.push(newIndex)
+
+                }while(newIndex === this.currentIndex)
+                // console.log(arraySongSelected)
+                
+                this.currentIndex = newIndex
+                this.loadCurrentSong()
+            },
+
+            start: function () {
+                //Định ngĩa ra các thuộc tính cho object
+                this.defineProperties();  
+
+                //Lắng nghe/xử lí các sự kiện (DOM events)
+                this.handleEvents();
+
+                //Tải thông tin bài đầu tiên
+                this.loadCurrentSong();
+
+                //Render playlist
+                this.render();
+
+                this.nextSong();
+            }
+        }
+        
+        app.start()
+    </script>
 </body>
 </html>
