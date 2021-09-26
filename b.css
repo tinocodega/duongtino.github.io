@@ -1,0 +1,46 @@
+body{
+    margin-left:0;
+    margin-top:0;
+}
+img {
+    position: relative;
+    width:45%;
+}
+#canchinh{
+    position:absolute;
+    top:0;
+    right:0;
+    width:45%;
+}
+#header {
+    text-align: justify;
+    margin-right:5%;
+    padding-bottom:5%;
+}
+#header .header-heading {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+#selection {
+    position: relative;
+    margin-right:5%;
+}
+#selection .header-selection {
+    text-transform: capitalize;
+}
+#selection .option-2 {
+    position:absolute;
+    right:0;
+    top:30px;
+    list-style: none;
+}
+#selection .option-1 {
+    list-style: none;
+}
+.check-option {
+    color:lightseagreen;
+    padding-right:5px;
+}
+.li-option {
+    line-height: 5vh;
+}
