@@ -1,391 +1,1724 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" style="border-radius: 50%;" href="./access/img/shortcut.png" type="image/x-icon">
-    <title>MUSIC MP3</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./access/fonts/icofont/icofont.min.css">
-    <link rel="stylesheet" href="./access/css/grid.css">
-    <link rel="stylesheet" href="./access/css/pretty.css">
-    <link rel="stylesheet" href="./access/css/main.css">
+<html lang="vi"><head>
+  <title>Zing MP3 | Nghe tải nhạc chất lượng cao trên desktop, mobile và TV</title>
+<meta charset="UTF-8">
+<meta name="description" content="Dịch vụ nhạc số với hàng triệu bài hát và MV có bản quyền chất lượng cao, giúp bạn nghe nhạc, tải nhạc, upload và đồng bộ kho nhạc của tôi trên nhiều thiết bị.">
+<meta name="keywords" content="Zing MP3, nhac so, nhac cua toi, nghe nhac, tai nhac, tim nhac, nhac chat luong cao, upload nhac">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Zing MP3">
+<link rel="canonical" href="https://zingmp3.vn">
+<link rel="alternate" media="handheld" href="https://m.zingmp3.vn">
+<link rel="icon" type="image/png" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/favicon.png">
+<link rel="apple-touch-icon" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/Icon-128.png">
+<link rel="icon" sizes="192x192" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/Icon-192.png">
+<meta name="apple-mobile-web-app-title" content="Zing MP3">
+<meta name="application-name" content="Zing MP3">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="apple-itunes-app" content="app-id=992357547">
+<meta name="google-site-verification" content="pzxzIC_2QSKnM2iQQQYKoPWc425970M_UIt2Rw3IKPk">
+<meta property="og:title" content="Nghe nhạc hay - Tải nhạc hot - Tìm nhạc vui - Chất lượng cao | Zing MP3">                
+<meta property="og:description" content="Dịch vụ nhạc số với hàng triệu bài hát và MV có bản quyền chất lượng cao, giúp bạn nghe nhạc, tải nhạc, upload và đồng bộ kho nhạc của tôi trên nhiều thiết bị.">        
+<meta property="og:image" content="//static-zmp3.zadn.vn/skins/common/logo600.png">
+<meta property="og:image:url" content="//static-zmp3.zadn.vn/skins/common/logo600.png">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="Zing MP3">
+<meta property="og:type" content="website">
+<meta name="al:android:url" property="al:android:url" content="zingmp3://" data-app="">
+<meta name="al:android:package" property="al:android:package" content="com.zing.mp3" data-app="">
+<meta name="al:android:app_name" property="al:android:app_name" content="Zing MP3" data-app="">
+<meta name="al:ios:url" property="al:ios:url" content="" data-app="">
+<meta property="al:ios:app_store_id" content="1603079626622346">
+<meta property="al:ios:app_name" content="Zing MP3">
+<meta property="fb:app_id" content="1603079626622346">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="geo.region" content="VN-SG">
+<meta name="geo.placename" content="11">
+<meta name="geo.position" content="10.763945;106.656201">
+<meta name="ICBM" content="10.763945, 106.656201">
+<link rel="apple-touch-icon" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/favicon.png" type="image/png">
+<link rel="icon" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/favicon.png" type="image/png">
+
+
+  <link href="//static-zmp3.zadn.vn/skins/zmp3-v5.2/fonts/roboto/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/fonts/v3.1/zingmp3-icon/styles.css" type="text/css">
+<link rel="stylesheet" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/css/layout.0.3.4.min.css">
+<link rel="stylesheet" href="https://zjs.zadn.vn/zplayer/releases/v1.0.2/zplayer.min.css" type="text/css">
+<link rel="stylesheet" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/css/modal-download.min.css" media="all" type="text/css">
+<style>
+#icon-34g {
+  background-image: url(//static-zmp3.zadn.vn/skins/zmp3_mobile_v5.1/images/ic_34g.png);
+  background-size: 25px 25px;
+  background-position: unset;
+  margin-right: -10px;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.list-action-is{
+  display: flex;
+  justify-content: space-around;
+}
+
+.lyrics-show-less{
+  max-height: 150px;
+  overflow: hidden;
+}
+.highcharts-series-group .highcharts-series {
+  opacity: 1;
+}
+</style>
+<!--        <link href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/family_vip/fonts/roboto/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/family_vip/fonts/zingmp3-icon/styles.css" type="text/css" />-->
+  <link rel="stylesheet" href="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/css/swiper.min.css" type="text/css">
+
+  <script src="https://connect.facebook.net/signals/config/676170256203936?v=2.9.47&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+window["_zap"] = window["_zap"] || [];
+window["_zap"].push(["_setAccount", "ZA-43074173394584"]);</script>
+<script src="https://stc.za.zaloapp.com/v3/za.js"></script>
+<script src="https://stc-sp.zadn.vn/session-sdk/session-sdk.min.js"></script><style type="text/css">.zl-login {  display: -webkit-box;  display: -ms-flexbox;  display: flex;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;  font-size: 14px;  cursor: pointer;} .zl-login .zl-login-avatar {  display: block;  -ms-flex-negative: 0;  flex-shrink: 0;  background-repeat: no-repeat;  background-size: cover;  background-position: center center;  width: 32px;  height: 32px;  margin-right: 5px;  border-radius: 100%;} .zl-login .zl-login-info {  -webkit-box-flex: 1;  -ms-flex-positive: 1;  flex-grow: 1;  min-width: 0;  display: -webkit-box;  display: -ms-flexbox;  display: flex;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;  max-width: 120px;} .zl-login .zl-login-info.zl-is-dropdown {  position: relative;  min-height: 32px;} .zl-login .zl-login-info.zl-is-dropdown.zl-is-open .zl-login-dropdown-content {  display: block;} .zl-login .zl-login-info.zl-is-dropdown {  position: relative;  min-height: 32px;}.zl-login .zl-login-info.zl-is-dropdown.zl-is-open .zl-login-dropdown-content {  display: block;}.zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content {  display: none;  position: absolute;  top: 100%;  right: 0;  min-width: 160px;  padding-top: 5px;}.zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul {  background-color: #fff;  padding: 0;  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);  list-style: none;}.zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li {  text-align: left;}.zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li a {  display: block;  padding: 10px 20px;  color: #111;  border-bottom: 1px solid #f1f1f1;}.zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li a:hover {  background-color: #fafafa;  opacity: 0.85;}.zl-login .zl-login-info.zl-is-dropdown .zl-login-dropdown-content ul li:last-child a {  border-bottom: 0;}.zl-login .zl-login-info .zl-login-username {  position: relative;  padding-right: 15px;}.zl-login .zl-login-info .zl-login-username span {  display: block;  max-width: 100px;  color: #111;  font-weight: 500;  overflow: hidden;  -o-text-overflow: ellipsis;  text-overflow: ellipsis;  white-space: nowrap;}.zl-login .zl-login-info .zl-login-username:before {  position: absolute;  top: 50%;  right: 0;  content: "";  height: 0;  width: 0;  border-left: 5px solid transparent;  border-right: 5px solid transparent;  border-top: 5px solid gray;  margin-top: -3px;}.zalo-login-button {  color: #008fec;  font-size: 14px;  font-weight: 700;}.zalo-login-widget {  margin-left: 10px;}</style>
+<script>
+var ZALO_OAUTH_URL = "https://oauth.zaloapp.com/v3/auth",
+APP_ID = "2588341350709494368",
+ZaloAuthen = {
+  fullUrl: ZALO_OAUTH_URL + "?app_id=" + APP_ID + "&redirect_uri=" + encodeURIComponent("https://zingmp3.vn"),
+  sendRedirectOAuthCode: function() {
+      var e = new XMLHttpRequest;
+      e.open("GET", ZaloAuthen.fullUrl), e.withCredentials = !0, e.send()
+  }
+};
+</script>
+<script>
+ZaloLoginWidget.init({
+  sessionName: 'zmp3_sid',
+  onLoad: function (resp) {
+      if (resp.error_code !== 0) {
+      
+      }
+      if (resp.data.logged) {
+          window.ZaloAuthen.sendRedirectOAuthCode();
+      
+
+      }
+  }
+});
+if (location.pathname == '/p/'){
+  location.href = '/';
+}
+</script>
+<script type="text/javascript">
+var NETWORK = {
+  OTHERS: "others",
+  VIETTEL: "viettel",
+  MOBIPHONE: "mobiphone",
+  VINAPHONE: "vinaphone"
+};
+var MP3 = {
+  DOMAIN_URL: "https://m.zingmp3.vn",
+      MAIN_URL: "https://zingmp3.vn",
+      XHR_URL: "https://m.zingmp3.vn/xhr",
+      API_V5_URL: "https://m.zingmp3.vn/api",
+      MP3_STATIC: "//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2",
+      PHOTO_URL: "//photo-zmp3.zadn.vn/",
+      VIP: false,
+      IMG_URL: "https://photo-zmp3.zadn.vn",
+      USER_ID: parseInt(0),
+      ZING_ID: parseInt(0),
+      USER_NAME: "",
+      SUBSCRIPTION_VIP: {},
+      FAMILY_VIP: {},
+      AVATAR: "//s120-ava-talk.zadn.vn/b/2/8/2/0/120/6a79f3f6c6c2bc41ddff7f554eee9ac0.jpg",
+      DISPLAY_NAME: "",
+      API_COMMENT_URL: "//comment.api.zingmp3.vn",
+      USER_DISPLAY_NAME: "",
+      ADTIMA_ADS_URL: "",
+      ADTIMA_ZONE_SLIDE_SALE: "2191289818115699280",
+      ADTIMA_ZONE_SLIDE_INTERNAL: "1939334873184956895",
+      ADTIMA_ZONE_ALBUM_1: "2392785975424545528",
+      ADTIMA_ZONE_ALBUM_2: "146082956479787773",
+      ADTIMA_ZONE_MV_HOT_1: "714048345076101887",
+      ADTIMA_ZONE_MV_HOT_2: "1282077488166957809",
+      ADTIMA_ZONE_AUDIO_NEW_1: "1471803326255820809",
+      LOGIN_URL: "https://id.zalo.me/account?continue=https://m.zingmp3.vn",
+      GET_LOG_INFO_URL: "https://m.zingmp3.vn/xhr/log/get-info-new",
+      NETWORK: NETWORK.OTHERS,
+      PRODUCTION_MODE: true,
+      NETWORK: NETWORK.OTHERS,
+      IMAGE_POPUP_3GVIP: "/event/eventbanner/190531_zaloplus_weeken_banner.png",
+      IMAGE_POPUP_3GVIP_VIETTEL: "/event/eventbanner/190502_PopUp_WAP_720x1080.jpg",
+      IMAGE_POPUP_3GVIP_MOBIFONE: "",
+      IMAGE_POPUP_3GVIP_VINAPHONE: "/event/eventbanner/190502_PopUp_WAP_720x1080.jpg",
+      IMAGE_POPUP_3GVIP_VMS: "/event/eventbanner/190502_PopUp_WAP_720x1080.jpg",
+      REGISTER_3GVIP: "http://zaloplus.vn/?utm_source=wap_zlp_mp3&utm_medium=popup&utm_campaign=wap_popup&app=mp3",
+      REGISTER_3GVIP_VIETTEL_3G: "http://zaloplus.vn/viettel?popup_vtl=1",
+      REGISTER_3GVIP_VIETTEL_WIFI: "sms:6969?body=ZV",
+      REGISTER_3GVIP_VINAPHONE: "sms:6969?body=ZV",
+      REGISTER_3GVIP_VMS: "sms:6969?body=XN",
+      VAS_POPUP_FROM_SMS: {
+      LINK: {
+      'viettel':"http://zaloplus.vn/?utm_source=wap_zlp_mp3&utm_medium=popup_sms&utm_campaign=wap_popup&app=mp3&p=w",
+              'vinaphone':"sms:6969?body=ZV7",
+              'mobiphone':"sms:6969?body=XN7",
+              'others':"http://zaloplus.vn/?app=mp3&utm_source=wap_zlp_mp3&utm_medium=popup_sms&utm_campaign=wap_popup&p=w",
+      },
+              IMAGE: {
+              '1': "/event/source_sms/190531_popup_min.jpg",
+                      '2': "/event/source_sms/190531_popup_jack.jpg",
+                      '3': "/event/source_sms/190531_popup_chipu.jpg",
+                      '4': "/event/source_sms/190613_popup_thaiquynh_ngay.png",
+              },
+              IMAGE_NGAY: {
+              '1': "/event/source_sms/190531_popup_min.jpg",
+                      '2': "/event/source_sms/190531_popup_jack.jpg",
+                      '3': "/event/source_sms/190531_popup_chipu.jpg",
+                      '4': "/event/source_sms/190613_popup_thaiquynh_ngay.png",
+              },
+              NAME:{
+              '1': "min",
+                      '2': "jack",
+                      '3': "chipu",
+                      '4': "thaiquynh"
+              }
+      }
+};
+window.Config = {
+  SKIN_URL: "//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2"
+};
+(function () {
+var getCookie = function (c_name) {
+var i, x, y, cks = document.cookie.split(";");
+for (i = 0; i < cks.length; i++) {
+x = cks[i].substr(0, cks[i].indexOf("="));
+y = cks[i].substr(cks[i].indexOf("=") + 1);
+x = x.replace(/^\s+|\s+$/g, "");
+if (x == c_name) {
+return unescape(y);
+}
+}
+return null;
+}
+var domain, uri = '';
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|zmp3/i.test(navigator.userAgent);
+uri = location.pathname + location.search;
+domain = 'https://zingmp3.vn';
+if (location.pathname.indexOf('/p/')>=0 || location.pathname.indexOf('/rv/')>=0){//link share oa feed & related videos
+  return;
+}
+if (!isMobile && getCookie('IS_MOBILE') == null) {
+  location.href = domain + uri;
+}
+}());</script>
+<script type="text/javascript">
+(function (i, s, o, g, r, a, m) {
+i['GoogleAnalyticsObject'] = r;
+i[r] = i[r] || function () {
+(i[r].q = i[r].q || []).push(arguments);
+}, i[r].l = 1 * new Date();
+a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+a.async = 1;
+a.src = g;
+m.parentNode.insertBefore(a, m);
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', '_gaq');
+_gaq('create', 'MO-1571128-20', 'auto');
+_gaq('send', 'pageview');
+_gaq('create', 'MO-1571128-21', 'auto', {'name': 'mp3'});
+_gaq('create', 'UA-128491503-1', 'auto', {'name': 'vtlTracker'});</script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/jquery/jquery.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/moment.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/moment-with-locales.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/mobile-detect.min.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/zmp3.common.0.0.27.min.js"></script>
+<script>
+//https://www.jsdelivr.com/package/npm/body-scroll-lock
+!function (e, t){if("function"==typeof define&&define.amd)define(["exports"],t);else if("undefined"!=typeof exports)t(exports);else{var o={};t(o),e.bodyScrollLock=o}}(this, function(exports){"use strict";function r(e){if(Array.isArray(e)){for(var t=0,o=Array(e.length);t<e.length;t++)o[t]=e[t];return o}return Array.from(e)}Object.defineProperty(exports,"__esModule",{value:!0});var l=!1;if("undefined"!=typeof window){var e={get passive(){l=!0}};window.addEventListener("testPassive",null,e),window.removeEventListener("testPassive",null,e)}var d="undefined"!=typeof window&&window.navigator&&window.navigator.platform&&/iP(ad|hone|od)/.test(window.navigator.platform),c=[],u=!1,a=-1,s=void 0,v=void 0,f=function(t){return c.some(function(e){return!(!e.options.allowTouchMove||!e.options.allowTouchMove(t))})},m=function(e){var t=e||window.event;return!!f(t.target)||(1<t.touches.length||(t.preventDefault&&t.preventDefault(),!1))},o=function(){setTimeout(function(){void 0!==v&&(document.body.style.paddingRight=v,v=void 0),void 0!==s&&(document.body.style.overflow=s,s=void 0)})};exports.disableBodyScroll=function(i,e){if(d){if(!i)return void console.error("disableBodyScroll unsuccessful - targetElement must be provided when calling disableBodyScroll on IOS devices.");if(i&&!c.some(function(e){return e.targetElement===i})){var t={targetElement:i,options:e||{}};c=[].concat(r(c),[t]),i.ontouchstart=function(e){1===e.targetTouches.length&&(a=e.targetTouches[0].clientY)},i.ontouchmove=function(e){var t,o,n,r;1===e.targetTouches.length&&(o=i,r=(t=e).targetTouches[0].clientY-a,!f(t.target)&&(o&&0===o.scrollTop&&0<r?m(t):(n=o)&&n.scrollHeight-n.scrollTop<=n.clientHeight&&r<0?m(t):t.stopPropagation()))},u||(document.addEventListener("touchmove",m,l?{passive:!1}:void 0),u=!0)}}else{n=e,setTimeout(function(){if(void 0===v){var e=!!n&&!0===n.reserveScrollBarGap,t=window.innerWidth-document.documentElement.clientWidth;e&&0<t&&(v=document.body.style.paddingRight,document.body.style.paddingRight=t+"px")}void 0===s&&(s=document.body.style.overflow,document.body.style.overflow="hidden")});var o={targetElement:i,options:e||{}};c=[].concat(r(c),[o])}var n},exports.clearAllBodyScrollLocks=function(){d?(c.forEach(function(e){e.targetElement.ontouchstart=null,e.targetElement.ontouchmove=null}),u&&(document.removeEventListener("touchmove",m,l?{passive:!1}:void 0),u=!1),c=[],a=-1):(o(),c=[])},exports.enableBodyScroll=function(t){if(d){if(!t)return void console.error("enableBodyScroll unsuccessful - targetElement must be provided when calling enableBodyScroll on IOS devices.");t.ontouchstart=null,t.ontouchmove=null,c=c.filter(function(e){return e.targetElement!==t}),u&&0===c.length&&(document.removeEventListener("touchmove",m,l?{passive:!1}:void 0),u=!1)}else 1===c.length&&c[0].targetElement===t?(o(),c=[]):c=c.filter(function(e){return e.targetElement!==t})}});
+</script>
+<script>
+moment.locale('vi');
+
+function hideModal() {
+  $('.z-modal').hide();
+  //$('body').removeClass('z-hide-scroll');
+  var targetElements = document.getElementsByClassName('z-modal');
+  for (var i = 0; i < targetElements.length; i++) {
+      window.bodyScrollLock && window.bodyScrollLock.enableBodyScroll(targetElements[i]);
+  }
+}
+function showModal(querySeletorModal) {
+  $(querySeletorModal).show();
+  //$('body').addClass('z-hide-scroll');
+  var targetElements = document.getElementsByClassName('z-modal');
+  for (var i = 0; i < targetElements.length; i++) {
+      window.bodyScrollLock && window.bodyScrollLock.disableBodyScroll(targetElements[i]);
+  }
+}
+</script>        
+   
 </head>
-<body>
-    <div class="container-music">
-        <header class="nav">
-            <span class="icon-container">
-                <i class="icofont-rounded-down"></i>
-            </span>
-            <div class="header-heading">
-                <p class="nav-head">New playing</p>
-                <h3 class="nav-content">
-                    Sting 57th & 9th
-                </h3>
-            </div>
-            <span class="icon-container">
-                <i class="icofont-plus"></i>
-            </span>
-        </header>
+<body class="w-zingmp3 z-hide-scroll" scroll="no" style="overflow: hidden;">
+  <header id="header">
+<div class="z-top-bar ">
+  <div class="z-top-bar-inner">
+      <div class="z-menu-slide mar-left-15">
+          <i class="icon ic-sort"></i>
+      </div>
+      <a href="/" class="z-logo">Zing mp3</a>
+      
+      <div class="z-menu-bar ">
+          
+          <div class="z-menu-bar-inner">
+              <ul class="z-nav pri">
+                  
+                  <li class="">
+                      <a class="text-upper nav-link active" href="/">
+                          Trang Chủ
+                      </a>
+                  </li>
+                  <li class="">
+                      <a class="text-upper nav-link " href="/zing-chart/index.html">
+                          #Zingchart
+                      </a>
+                  </li>
+                  <li class="">
+                      <a class="text-upper nav-link " href="/mymusic">
+                          Nhạc cá nhân
+                      </a>
+                  </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+              </ul>
+          </div>
+      </div>
+      
+      <div class="user-profile-container">
+          <div class="z-card card-40">    
+              <div class="search-icon mar-right-10">
+                  <i class="icon ic-search" id="icon-header-search"></i>
+              </div>
+              <a href="#!" class="thumb-30">
+                  <img id="image-user" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/avatar_mobile.png" alt="">
+              </a>
+          </div>
+          
+      </div>
+  </div>
+</div>
 
-        <div class="cd">
-            <img src="" alt="" class="cd-img">
-        </div>
-
-        <div class="navigation">
-            <div class="navigation-item random">
-                <i class="icofont-random"></i>
-            </div>
-            <div class="navigation-item reply">
-                <i class="icofont-ui-reply"></i>
-            </div>
-            <div class="navigation-item play-pause">
-                <div class="p-open">
-                    <i class="icofont-pause"></i>
-                </div>
-                <div class="p-close">
-                    <i class="icofont-play-alt-1"></i>
-                </div>
-            </div>
-            <div class="navigation-item next-song">
-                <i class="icofont-ui-next"></i>
-            </div>
-            <div class="navigation-item volume">
-                <div class="p-volume-open">
-                    <i class="icofont-volume-down"></i>
-                </div>
-                <div class="p-volume-close">
-                    <i class="icofont-volume-off"></i>
-                </div>
-            </div>
-            
-        </div>
-        <input type="range" class="progress" id="progress" value="0" step="1" min="0" max="100">
-
-        <audio src="" class="audio"></audio>
-    </div>
-    
-    <div class="list-music">
-        
-    </div>
-
-    <div class="footer">
-        <span class="icon-footer">
-            <i class="icofont-home"></i>
-        </span>
-        <span class="icon-footer">
-            <i class="icofont-music-note"></i>
-        </span>
-        <span class="icon-footer">
-            <i class="icofont-play-alt-1 icon-play"></i>
-        </span>
-        <span class="icon-footer">
-            <i class="icofont-search"></i>
-        </span>
-        <span class="icon-footer">
-            <i class="icofont-navigation-menu"></i>
-        </span>
-    </div>
-    <script>
-        
-        const cdFather = document.querySelector('.cd')
-        const cd = document.querySelector('.cd-img');
-        const nav_content = document.querySelector('.nav-content');
-        const audio = document.querySelector('.audio');
-        const checkbox = document.querySelector('#checkbox');
-        const playAudio = document.querySelector('.play-pause');
-        const pause = document.querySelector('.p-close');
-        const play = document.querySelector('.p-open');
-        const isPlaying = false;
-
-        const app = {
-            currentIndex:0, //Lấy chỉ mục bằng 0
-            songs:[
-                {
-                    name:'Mashup LoveSongs',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Bùi Anh Tuấn -đã sai từ lúc đầu- nên bây giờ -cạn dòng nước mắt- Love Songs - Cover.mp3',
-                    image:'./access/img/mashup-loveSongs.png'
-                },
-                {
-                    name:'Cưới nhau đi ( yes i do)',
-                    singer:"Bùi Anh Tuấn - Hiền Hồ",
-                    path:'./access/song/Cưới nhau đi ( yes i do) - Bùi Anh Tuấn , Hiền Hồ.mp3',
-                    image:'./access/img/cuoinhaudi.png'
-                },
-                {
-                    name:'Đường ai nấy đi',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Đường Ai Nấy Đi (Lofi Ver.) - Bùi Anh Tuấn x Freak D.mp3',
-                    image:'./access/img/duongainaydi.png'
-                },
-                {
-                    name:'Hẹn một mai',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Hẹn một mai ‣ Bùi Anh Tuấn.mp3',
-                    image:'./access/img/henmotmai.png'
-                },
-                {
-                    name:'Hoang mang',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/HOANG MANG - BÙI ANH TUẤN.mp3',
-                    image:'./access/img/hoangmang.png'
-                },
-                {
-                    name:'Yêu em rất nhiều',
-                    singer:"Hoàng Tôn",
-                    path:'./access/song/HOÀNG TÔN - YÊU EM RẤT NHIỀU.mp3',
-                    image:'./access/img/yeuemratnhieu.png'
-                },
-                {
-                    name:'Lặng yên',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Lặng Yên - Bùi Anh Tuấn @ Swing Lounge.mp3',
-                    image:'./access/img/langyen.png'
-                },
-                {
-                    name:'Mơ hồ',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Mơ Hồ - Bùi Anh Tuấn.mp3',
-                    image:'./access/img/moho.png'
-                },
-                {
-                    name:'Nơi tình yêu bắt đầu',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Nơi Tình Yêu Bắt Đầu - Bùi Anh Tuấn.mp3',
-                    image:'./access/img/noitinhyeubatdau.png'
-                },
-                {
-                    name:'Nơi tình yêu kết thúc',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Nơi Tình Yêu Kết Thúc - Bùi Anh Tuấn.mp3',
-                    image:'./access/img/noitinhyeuketthuc.png'
-                },
-                {
-                    name:'Ta là của nhau',
-                    singer:"Đông Nhi - Ông Cao Thắng",
-                    path:'./access/song/Ta Là Của Nhau - Đông Nhi ft. Ông Cao Thắng - Yeah1 Superstar.mp3',
-                    image:'./access/img/talacuanhau.png'
-                },
-                {
-                    name:'Thuận theo ý trời',
-                    singer:"Bùi Anh Tuấn",
-                    path:'./access/song/Thuận Theo Ý Trời - Bùi Anh Tuấn.mp3',
-                    image:'./access/img/thuantheoytroi.png'
-                }
-                
-            ],
-                
-            render: function () {
-                const htmls = this.songs.map((song,index) => {
-                    return `
-                    <div class="song ${index === this.currentIndex?'active':''}">
-                        <div class="thumb"
-                            style="background-image:url('${song.image}') ;"
-                        >             
-                        </div>
-
-                        <div class="body">
-                            <h3 class="title">
-                                ${song.name}
-                            </h3>
-                            <p class="author">
-                                ${song.singer}
-                            </p>
-                        </div>
-                        <div class="option">
-                            <i class="option-icon icofont-options"></i>
-                        </div>
-                    </div>
-                    `
-                })
-
-                document.querySelector('.list-music').innerHTML = htmls.join("");
-            },
-            defineProperties: function () {
-                Object.defineProperty(this,'currentSong', {
-                    get: function () {
-                        return this.songs[this.currentIndex]
-                    }
-                })
-            },
-
-            handleEvents: function () {
-                const _this = this;
-                const cdWidth = cd.offsetWidth;
-                const cdHeight = cd.offsetHeight;
-
-                //Xử lí CD quay/dừng
-                const cdAnimate = cdFather.animate([
-                    {transform:'rotate(360deg)'}
-                ],{
-                    duration:20000, //10 giây
-                    iterations : Infinity //Vô hạn
-                })
-                cdAnimate.pause()
-
-                //Xử lí khi phóng to thu nhỏ
-                document.onscroll = function () {
-                    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-                    const cdWidthNew = cdWidth - scrollTop;
-                    const cdHeightNew = cdHeight - scrollTop;
-                    cd.style.width = cdWidthNew > 0 ?cdWidthNew + 'px':0;
-                    cd.style.height = cdHeightNew > 0?cdHeightNew + 'px':0;
-
-                    cd.style.opacity = cdWidthNew/cdWidth;
-
-                }
-
-                //Xử lí khi click play
-                playAudio.onclick = function () {
-                    if(!_this.isPlaying){
-                        audio.play();
-                        play.style.display = 'block';
-                        pause.style.display = 'none';
-                      
-                    }else {
-                        audio.pause();
-                        play.style.display = 'none';
-                        pause.style.display = 'block';
-                    }               
-                }
-                //Khi song được play/pause
-                audio.onplay = function () {
-                    _this.isPlaying = true;
-                    cdAnimate.play()
-                }
-
-                audio.onpause = function () {
-                    _this.isPlaying = false;
-                    cdAnimate.pause()
-                }
-
-                
-                //Xử lí tiến độ bài hát
-                const progress = document.querySelector('.progress')
-                audio.ontimeupdate = function () {
-                    
-                    if(audio.duration) {
-                        const progressPercent = Math.floor(audio.currentTime / audio.duration * 100)
-                        progress.value = progressPercent;
-                    }                
-                }
-
-                //Xử lí khi tua song 
-                progress.onchange = function (time) {
-                    const seekTime = audio.duration/100 * time.target.value
-                    audio.currentTime = seekTime
-                }
+</header>
+  <div class="z-menu-navigation z-show">
+<div class="z-menu-inner z-show">
+  <div class="user-profile-container">
+      <div class="z-card" id="user-profile">
+      <a href="#!" class="thumb-60"><img src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/avatar_mobile.png" alt=""></a><div class="card-info mar-left-20 mar-top-20"><div class="title"><a class="btn-login mar-bottom-10" onclick="ZaloLoginWidget.login()">Đăng nhập</a></div><div class="user-actions" style="padding-bottom: 1px;"><a class="z-btn-buy-vip action-btn mar-right-10" href="https://zingmp3.vn/vip?utm_source=wap&amp;utm_medium=vip&amp;utm_campaign=purchase_vip">Nâng cấp VIP</a><a class="z-btn-buy-vip action-btn" href="https://zingmp3.vn/vip/insert-code" style="background-color: transparent; box-shadow: 0 0 0 1px black; margin-left: 1px;">Nhập code VIP</a></div></div></div>
+  </div>
+  <a href="#!" class="z-close-btn">
+      <i class="icon ic-close"></i>
+  </a>
+  <!--<div class="z-menu-content" style="max-height: 90vh;overflow-y: auto;">-->
+  <div class="z-menu-content" style="max-height: 80vh;overflow-y: auto;" id="menu-navigation">
+      <ul class="clearfix">
+          <li>
+              <a class="z-menu-item active" href="/">
+                  <i class="icon ic-mn-home"></i> Trang Chủ
+              </a>
+          </li>
+          <li>
+              <a class="z-menu-item " href="/zing-chart/index.html">
+                  <i class="icon ic-mn-chart"></i> #Zingchart
+              </a>
+          </li>
+          <li>
+              <a class="z-menu-item " href="/moi-phat-hanh">
+                  <i class="icon ic-mn-theme-song"></i> Mới phát hành
+              </a>
+          </li>
+          <li>
+              <a class="z-menu-item " href="/top100">
+                  <i class="icon ic-mn-top100"></i> Top 100
+              </a>
+          </li>
+          <li>
+              <a class="z-menu-item " href="/chu-de">
+                  <i class="icon ic-catalogue"></i> Chủ đề
+              </a>
+          </li>
+          <li>
+              <a class="z-menu-item " href="/the-loai-video/Viet-Nam/IWZ9Z08I.html">
+                  <i class="icon ic-mn-mv"></i> MV
+              </a>
+          </li>
+          <li>
+              <a class="z-menu-item " href="/the-loai-album/Viet-Nam/IWZ9Z08I.html">
+                  <i class="icon ic-mn-album"></i> Album
+              </a>
+          </li>
+          <li class="bor-bottom">
+              <a class="z-menu-item " href="/mymusic">
+                  <i class="icon ic-mn-my-music"></i> Nhạc cá nhân
+              </a>
+          </li>
+          <li style="display: none;" class="fn-manage-vip-family">
+              <a class="z-menu-item" href="/family-vip">
+                  <i class="icon ic-vip-family-outline"></i> Quản lý VIP Family
+              </a>
+          </li>
+          <li style="display: none;" class="fn-logout-btn">
+              <a class="z-menu-item " onclick="ZaloLoginWidget.logout()">
+                  <i class="icon ic-log-out"></i> Đăng xuất
+              </a>
+          </li>
+          <li style="opacity: 0;" class="fn-btn">
+              <a class="z-menu-item " href="javascript:void(0)">
+                  <i class="icon ic-log-out"></i> 
+              </a>
+          </li>
+      </ul>
+  </div>
+</div>
+</div>
 
 
-                //Xử lí volumn tắt/bật
-                const volume = document.querySelector('.volume');
-                volume.onclick = function () {
-                    const pVolumeOpen = document.querySelector('.p-volume-open');
-                    const pVolumeClose = document.querySelector('.p-volume-close');
-                    const volumeDefault = audio.volume === 1;
-                    if(volumeDefault) {
-                        audio.volume = 0;
-                        pVolumeOpen.style.display ='none';
-                        pVolumeClose.style.display ='block';
-                    }else {
-                        audio.volume = 1;
-                        pVolumeOpen.style.display ='block';
-                        pVolumeClose.style.display ='none';
-                    }
-                }
+  <main id="main-body" class="bg-page  ">
+      <div id="Mp3_WAP_Masthead" class="ads_location_header" data-action="fill_zone" data-name="ads_zone"></div>
+<section class="z-slider-main fn-adtima-zone" data-type="slide">
+<div id="slider-main">
+  <div class="slide-wrapper card-450-265 swiper-container swiper-container-horizontal swiper-container-ios">
+      <div class="z-inner-slide-wrap swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+          
+          <div class="swiper-slide swiper-slide-active" style="width: 414px;">
+              <div class="slide-item" id="Mp3_Wap_Top">
+                  <a class="active" href="/bai-hat/Dau-Ta-Con-Yeu-Reddy/ZU8F8IUD.html" title="">
+                      <img src="https://photo-zmp3.zadn.vn/banner/5/8/c/8/58c8324a605c65c526cd2eff8c402ca5.jpg" alt="" target="1" title="">
+                  </a>
+                  <div class="z-card card-info z-card-banner">
+                      <a href="/bai-hat/Dau-Ta-Con-Yeu-Reddy/ZU8F8IUD.html" title=""></a>
+                      <div class="thumb-72">
+                          <img src="https://photo-zmp3.zadn.vn/avatars/b/c/4/f/bc4f6fc5c0128465d8a9f91928cb88b0.jpg" alt="">
+                      </div>
+                      <div class="z-song-info mar-left-10">
+                          <div class="title">
+                              <a href="/bai-hat/Dau-Ta-Con-Yeu-Reddy/ZU8F8IUD.html" title="">
+                              </a>
+                          </div>
+                          <div class="describe banner-describe">
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="swiper-slide swiper-slide-next" style="width: 414px;">
+              <div class="slide-item">
+                  <a class="active" href="/bai-hat/Welcome-to-the-Show-B-Ray-Great/ZU9WWBEA.html" title="">
+                      <img src="https://photo-zmp3.zadn.vn/banner/2/1/c/3/21c3cee3f820be1806970113960f6f89.jpg" alt="" target="1" title="">
+                  </a>
+                  <div class="z-card card-info z-card-banner">
+                      <a href="/bai-hat/Welcome-to-the-Show-B-Ray-Great/ZU9WWBEA.html" title=""></a>
+                      <div class="thumb-72">
+                          <img src="https://photo-zmp3.zadn.vn/avatars/3/3/c/3/33c340726bb831b0d736da55fd7c9716.jpg" alt="">
+                      </div>
+                      <div class="z-song-info mar-left-10">
+                          <div class="title">
+                              <a href="/bai-hat/Welcome-to-the-Show-B-Ray-Great/ZU9WWBEA.html" title="">
+                              </a>
+                          </div>
+                          <div class="describe banner-describe">
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="swiper-slide" style="width: 414px;">
+              <div class="slide-item">
+                  <a class="active" href="/bai-hat/Minh-Lac-Nhau-Muon-Doi-Pham-Sac-Lenh/ZU9WO8C6.html" title="">
+                      <img src="https://photo-zmp3.zadn.vn/banner/6/8/7/3/6873b6c6c9c8c0fad4beb8ea4e34f0b3.jpg" alt="" target="1" title="">
+                  </a>
+                  <div class="z-card card-info z-card-banner">
+                      <a href="/bai-hat/Minh-Lac-Nhau-Muon-Doi-Pham-Sac-Lenh/ZU9WO8C6.html" title=""></a>
+                      <div class="thumb-72">
+                          <img src="https://photo-zmp3.zadn.vn/avatars/2/a/1/2/2a12ac98ff14068815881a924d24c712.jpg" alt="">
+                      </div>
+                      <div class="z-song-info mar-left-10">
+                          <div class="title">
+                              <a href="/bai-hat/Minh-Lac-Nhau-Muon-Doi-Pham-Sac-Lenh/ZU9WO8C6.html" title="">
+                              </a>
+                          </div>
+                          <div class="describe banner-describe">
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="swiper-slide" style="width: 414px;">
+              <div class="slide-item" data-zone="1939334873184956895">
+                  <a class="active" href="/bai-hat/Cam-On-Ton-Thuong-Thuong-Vo-Pham-Nguyen-Ngoc-ACV/ZU9W607O.html" title="">
+                      <img src="https://photo-zmp3.zadn.vn/banner/2/f/1/1/2f1192f04f37cdd771572fdfa7cc681a.jpg" alt="" target="1" title="">
+                  </a>
+                  <div class="z-card card-info z-card-banner">
+                      <a href="/bai-hat/Cam-On-Ton-Thuong-Thuong-Vo-Pham-Nguyen-Ngoc-ACV/ZU9W607O.html" title=""></a>
+                      <div class="thumb-72">
+                          <img src="https://photo-zmp3.zadn.vn/avatars/7/3/b/a/73ba91214e133a6fec20a5c4d3b198cb.jpg" alt="">
+                      </div>
+                      <div class="z-song-info mar-left-10">
+                          <div class="title">
+                              <a href="/bai-hat/Cam-On-Ton-Thuong-Thuong-Vo-Pham-Nguyen-Ngoc-ACV/ZU9W607O.html" title="">
+                              </a>
+                          </div>
+                          <div class="describe banner-describe">
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="swiper-slide" style="width: 414px;">
+              <div class="slide-item" data-zone="2191289818115699280">
+                  <a class="active" href="/liveradio/IWZ979UC.html" title="">
+                      <img src="https://photo-zmp3.zadn.vn/banner/3/4/7/4/3474d8b13323b934ac60fefbe42b528d.jpg" alt="" target="1" title="">
+                  </a>
+                  <div class="z-card card-info z-card-banner">
+                      <a href="/liveradio/IWZ979UC.html" title=""></a>
+                      <div class="thumb-72">
+                          <img src="https://photo-zmp3.zadn.vn/avatars/1/b/0/3/1b038a9889efb2715a1684bf1d74ee6e.jpg" alt="">
+                      </div>
+                      <div class="z-song-info mar-left-10">
+                          <div class="title">
+                              <a href="/liveradio/IWZ979UC.html" title="">
+                              </a>
+                          </div>
+                          <div class="describe banner-describe">
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+  </div>
+</div>
+</section>
 
-                //Xử lí lặp lại bài hát
-                const reply = document.querySelector('.reply');
-                const isLoop = true;
-                reply.onclick = function () {
-                    if(reply.style.color === 'var(--text-color)') {
-                        audio.loop = true;
-                        reply.style.color = 'var(--primary-color)';
-                    }else {
-                        audio.loop = false;
-                        reply.style.color = 'var(--text-color)';
-                    }
+<section class="z-banner-vip mar-top-20">
+<div class="container">
+<a href="https://zingmp3.vn/vip#utm_source=wap&amp;utm_medium=mid-banner&amp;utm_campaign=VIP" title="banner-vip">
+  <img src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/banner-vip.png" alt="banner-vip">
+</a>
+</div>
+<p style="
+text-align: center;
+"><a href="https://zingmp3.vn/vip/insert-code" style="
+color: #6e6e6e;
+margin-top: 15px;
+display: block;
+margin-bottom: 30px;
+text-decoration: underline;
+font-size: 13px;
+">Hoặc nhập code VIP</a></p>
+</section>
 
-                }
-                
-                //Xử lí next bài hát
-                document.querySelector('.next-song').onclick = function () {
-                    if(random.style.color === 'var(--text-color)') {
-                        _this.nextSong()                
-                    }else {
-                        _this.playRandomSong()
-                    }
-                    audio.play()                   
-                    _this.render()
-                    play.style.display = 'block';
-                    pause.style.display = 'none';
-                }
+<section class="mar-top-20">
+<div class="container">
+  <div clas="sub-container pad-top-40">
+      
+<div class="z-float-header">
+<a class="a-disabled z-box-title" title="Càng nghe càng mê">
+  Càng nghe càng mê
+  
+</a>
 
-                //Xử lí random song
-                const random = document.querySelector('.random')
-                random.onclick = function (){
-                    if(random.style.color === 'var(--text-color)') {
-                        random.style.color = 'var(--primary-color)';
-                    }else {
-                        random.style.color = 'var(--text-color)';
-                    }
-                }
+</div>
 
-                //Xử lí auto next song
-                audio.onended = function () {
-                    document.querySelector('.next-song').click()
-                    
-                    _this.render()
-                }
 
-            },
-            loadCurrentSong: function () {
-                cd.src = this.currentSong.image;
-                nav_content.textContent = this.currentSong.name;
-                audio.src = this.currentSong.path;
-            },
 
-            nextSong:function () {
-                this.currentIndex++
-                if(this.currentIndex >=this.songs.length) {
-                    this.currentIndex = 0
-                }
-                this.loadCurrentSong()   
-            },
+<div class="row fn-load-more-list">
 
-            playRandomSong: function () {
-                let newIndex
-                do {                
-                    newIndex = Math.floor(Math.random() *this.songs.length)
-                    // const arrayindex = arraySongSelected.push(newIndex)
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album">
+  <a href="/album/Remake-Viet-Bich-Phuong-Bao-Anh-GiGi-Huong-Giang-Vicky-Nhung/678D7I0O.html"></a>
+  <a class="card-210" href="/album/Remake-Viet-Bich-Phuong-Bao-Anh-GiGi-Huong-Giang-Vicky-Nhung/678D7I0O.html" title="Remake Việt">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/0/a/c/2/0ac2ce0a29fd96db9952b6cc220dcee8.jpg" alt="Remake Việt">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Remake-Viet-Bich-Phuong-Bao-Anh-GiGi-Huong-Giang-Vicky-Nhung/678D7I0O.html" class="z-multi-line-1">Remake Việt</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Bich-Phuong-Bao-Anh-GiGi-Huong-Giang-Vicky-Nhung" title="Nhiều nghệ sĩ">Nhiều nghệ sĩ</a>
+          
+      </div>
+  </div>
+</div>
+</div>
 
-                }while(newIndex === this.currentIndex)
-                // console.log(arraySongSelected)
-                
-                this.currentIndex = newIndex
-                this.loadCurrentSong()
-            },
 
-            start: function () {
-                //Định ngĩa ra các thuộc tính cho object
-                this.defineProperties();  
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album">
+  <a href="/album/Vocal-Cuc-Dinh-Adele-Celine-Dion-Mariah-Carey-Ariana-Grande/67FIIAC0.html"></a>
+  <a class="card-210" href="/album/Vocal-Cuc-Dinh-Adele-Celine-Dion-Mariah-Carey-Ariana-Grande/67FIIAC0.html" title="Vocal Cực Đỉnh">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/8/b/d/1/8bd181888f82c8fb21364006aa7c0628.jpg" alt="Vocal Cực Đỉnh">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Vocal-Cuc-Dinh-Adele-Celine-Dion-Mariah-Carey-Ariana-Grande/67FIIAC0.html" class="z-multi-line-1">Vocal Cực Đỉnh</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Adele-Celine-Dion-Mariah-Carey-Ariana-Grande" title="Nhiều nghệ sĩ">Nhiều nghệ sĩ</a>
+          
+      </div>
+  </div>
+</div>
+</div>
 
-                //Lắng nghe/xử lí các sự kiện (DOM events)
-                this.handleEvents();
 
-                //Tải thông tin bài đầu tiên
-                this.loadCurrentSong();
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album">
+  <a href="/album/Tan-Man-Cung-Indie-Viet-hooligan-Quinn-Changg-Starry-Night/ZO698UDB.html"></a>
+  <a class="card-210" href="/album/Tan-Man-Cung-Indie-Viet-hooligan-Quinn-Changg-Starry-Night/ZO698UDB.html" title="Tản Mạn Cùng Indie Việt">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/a/0/a/aa0a8541dd99c557c878aa523efa4538.jpg" alt="Tản Mạn Cùng Indie Việt">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Tan-Man-Cung-Indie-Viet-hooligan-Quinn-Changg-Starry-Night/ZO698UDB.html" class="z-multi-line-1">Tản Mạn Cùng Indie Việt</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/hooligan-Quinn-Changg-Starry-Night" title="Nhiều nghệ sĩ">Nhiều nghệ sĩ</a>
+          
+      </div>
+  </div>
+</div>
+</div>
 
-                //Render playlist
-                this.render();
 
-                this.nextSong();
-            }
-        }
-        
-        app.start()
-    </script>
-</body>
-</html>
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album" data-zone="2392785975424545528">
+  <a href="/album/Nhac-Phim-Han-Moi-Nhat-Jo-Jung-Suk-Jung-Yong-Hwa-Park-Jihoon-Punch/ZFUFCUC7.html"></a>
+  <a class="card-210" href="/album/Nhac-Phim-Han-Moi-Nhat-Jo-Jung-Suk-Jung-Yong-Hwa-Park-Jihoon-Punch/ZFUFCUC7.html" title="Nhạc Phim Hàn Mới Nhất">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/c/b/5/d/cb5d1ba5c087f2e28badbf6aef4f41ee.jpg" alt="Nhạc Phim Hàn Mới Nhất">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Nhac-Phim-Han-Moi-Nhat-Jo-Jung-Suk-Jung-Yong-Hwa-Park-Jihoon-Punch/ZFUFCUC7.html" class="z-multi-line-1">Nhạc Phim Hàn Mới Nhất</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Jo-Jung-Suk-Jung-Yong-Hwa-Park-Jihoon-Punch" title="Nhiều nghệ sĩ">Nhiều nghệ sĩ</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+</section>
+
+<section class="z-week-chart">
+<div class="">
+  <div class=" z-widget">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="z-chart-realtime-wrapper">
+                  <div class="z-chart-realtime">
+                      <div class="realtime-header clearfix">
+                          <div class="pull-left">
+                              <a href="/zing-chart/index.html" class="z-btn z-btn-zingchart">#zingchart</a>
+                          </div>
+                          <div class="pull-right">
+                              <span class="z-time-pick white">17/10/2021 12:17</span>
+                              <a href="/album/ZING-CHART-Various-Artists/ZO68OC68.html" class="play-btn mar-left-10 pull-right">
+                                  <i class="icon ic-svg-play-outline"></i>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="realtime-chart" id="chart1" style="height: 0px; overflow: hidden;" data-type="song" data-time="-1" data-count="3" data-highcharts-chart="0"><div id="highcharts-xsb21ip-0" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 414px; height: 233px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="414" height="233" viewBox="0 0 414 233"><desc>Created with Highcharts 7.1.1</desc><defs><clipPath id="highcharts-xsb21ip-1-"><rect x="0" y="0" width="374" height="203" fill="none"></rect></clipPath></defs><rect fill="rgba(255, 255, 255, 0.0)" class="highcharts-background" x="0" y="0" width="414" height="233" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="20" y="5" width="374" height="203"></rect><g class="highcharts-grid highcharts-xaxis-grid" data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 35.5 5 L 35.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 66.5 5 L 66.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 97.5 5 L 97.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 128.5 5 L 128.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 159.5 5 L 159.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 190.5 5 L 190.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 222.5 5 L 222.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 253.5 5 L 253.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 284.5 5 L 284.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 315.5 5 L 315.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 346.5 5 L 346.5 208" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 377.5 5 L 377.5 208" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid" data-z-index="1"><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 20 208.5 L 394 208.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 20 145.5 L 394 145.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 20 82.5 L 394 82.5" opacity="1"></path><path fill="none" data-z-index="1" class="highcharts-grid-line" d="M 20 19.5 L 394 19.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="20" y="5" width="374" height="203"></rect><g class="highcharts-plot-lines-1" data-z-index="1"><path fill="none" class="highcharts-plot-line "></path></g><g class="highcharts-axis highcharts-xaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 20 208 L 394 208"></path></g><g class="highcharts-axis highcharts-yaxis" data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 20 5 L 20 208"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="8" class="highcharts-series highcharts-series-2 highcharts-line-series " transform="translate(20,5) scale(1 1)" clip-path="url(#highcharts-xsb21ip-1-)"><path fill="none" d="M -358.41666666667 88.29428926132836 L -327.25 90.72625698324022 L -296.08333333333 100.37852265673494 L -264.91666666667 112.80297951582867 L -233.75 115.18454376163874 L -202.58333333333 114.44109248913718 L -171.41666666667 112.26114214773432 L -140.25 118.75058969584109 L -109.08333333333 111.61849782743637 L -77.916666666667 102.6592799503414 L -46.75 89.03774053382992 L -15.583333333333 92.65418994413407 L 15.583333333333 119.96027312228429 L 46.75 133.80862818125388 L 77.916666666667 165.4998137802607 L 109.08333333333 164.0381129733085 L 140.25 166.19286157666045 L 171.41666666667 160.96350093109868 L 202.58333333333 128.20124146492861 L 233.75 98.99242706393544 L 264.91666666667 93.08261949099938 L 296.08333333333 83.37995034140285 L 327.25 92.40217256362507 L 358.41666666667 101.5756052141527" class="highcharts-graph" data-z-index="1" stroke="#e35050" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -383.41666666667 88.29428926132836 L -358.41666666667 88.29428926132836 L -327.25 90.72625698324022 L -296.08333333333 100.37852265673494 L -264.91666666667 112.80297951582867 L -233.75 115.18454376163874 L -202.58333333333 114.44109248913718 L -171.41666666667 112.26114214773432 L -140.25 118.75058969584109 L -109.08333333333 111.61849782743637 L -77.916666666667 102.6592799503414 L -46.75 89.03774053382992 L -15.583333333333 92.65418994413407 L 15.583333333333 119.96027312228429 L 46.75 133.80862818125388 L 77.916666666667 165.4998137802607 L 109.08333333333 164.0381129733085 L 140.25 166.19286157666045 L 171.41666666667 160.96350093109868 L 202.58333333333 128.20124146492861 L 233.75 98.99242706393544 L 264.91666666667 93.08261949099938 L 296.08333333333 83.37995034140285 L 327.25 92.40217256362507 L 358.41666666667 101.5756052141527 L 383.41666666667 101.5756052141527" visibility="visible" data-z-index="2" class="highcharts-tracker-line" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="52"></path></g><g data-z-index="8" class="highcharts-markers highcharts-series-2 highcharts-line-series  highcharts-tracker" transform="translate(20,5) scale(1 1)"></g><g data-z-index="9" class="highcharts-series highcharts-series-1 highcharts-line-series " transform="translate(20,5) scale(1 1)" clip-path="url(#highcharts-xsb21ip-1-)"><path fill="none" d="M -358.41666666667 42.679143389199254 L -327.25 44.342458100558645 L -296.08333333333 76.85270018621974 L -264.91666666667 88.42029795158287 L -233.75 94.99795158286778 L -202.58333333333 87.86585971446306 L -171.41666666667 95.95561762880199 L -140.25 97.01409062693979 L -109.08333333333 94.49391682184978 L -77.916666666667 87.56343885785226 L -46.75 73.18584729981379 L -15.583333333333 84.4006207324643 L 15.583333333333 112.80297951582867 L 46.75 138.00471756672874 L 77.916666666667 166.67169459962756 L 109.08333333333 165.8274363749224 L 140.25 171.52302917442583 L 171.41666666667 163.3576660459342 L 202.58333333333 135.8751707014277 L 233.75 96.91328367473618 L 264.91666666667 69.48119180633145 L 296.08333333333 62.41210428305399 L 327.25 69.78361266294226 L 358.41666666667 85.47169459962755" class="highcharts-graph" data-z-index="1" stroke="#50e3c2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -383.41666666667 42.679143389199254 L -358.41666666667 42.679143389199254 L -327.25 44.342458100558645 L -296.08333333333 76.85270018621974 L -264.91666666667 88.42029795158287 L -233.75 94.99795158286778 L -202.58333333333 87.86585971446306 L -171.41666666667 95.95561762880199 L -140.25 97.01409062693979 L -109.08333333333 94.49391682184978 L -77.916666666667 87.56343885785226 L -46.75 73.18584729981379 L -15.583333333333 84.4006207324643 L 15.583333333333 112.80297951582867 L 46.75 138.00471756672874 L 77.916666666667 166.67169459962756 L 109.08333333333 165.8274363749224 L 140.25 171.52302917442583 L 171.41666666667 163.3576660459342 L 202.58333333333 135.8751707014277 L 233.75 96.91328367473618 L 264.91666666667 69.48119180633145 L 296.08333333333 62.41210428305399 L 327.25 69.78361266294226 L 358.41666666667 85.47169459962755 L 383.41666666667 85.47169459962755" visibility="visible" data-z-index="2" class="highcharts-tracker-line" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="52"></path></g><g data-z-index="9" class="highcharts-markers highcharts-series-1 highcharts-line-series  highcharts-tracker" transform="translate(20,5) scale(1 1)"></g><g data-z-index="10" class="highcharts-series highcharts-series-0 highcharts-line-series " transform="translate(20,5) scale(1 1)" clip-path="url(#highcharts-xsb21ip-1-)"><path fill="none" d="M -358.41666666667 44.758286778398514 L -327.25 33.833333333333314 L -296.08333333333 53.604096834264425 L -264.91666666667 65.31030415890751 L -233.75 72.35418994413408 L -202.58333333333 74.63494723774053 L -171.41666666667 79.93991309745499 L -140.25 79.15865921787709 L -109.08333333333 77.65915580384853 L -77.916666666667 73.67728119180632 L -46.75 61.089013035381754 L -15.583333333333 70.27504655493482 L 15.583333333333 92.88100558659217 L 46.75 121.92600869025449 L 77.916666666667 154.22203600248292 L 109.08333333333 153.18876474239602 L 140.25 159.18677839851023 L 171.41666666667 156.23817504655494 L 202.58333333333 126.85294847920545 L 233.75 81.79224084419614 L 264.91666666667 48.65195530726257 L 296.08333333333 36.59292364990688 L 327.25 41.34345127250154 L 358.41666666667 55.75884543761637" class="highcharts-graph" data-z-index="1" stroke="#4a90e2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -383.41666666667 44.758286778398514 L -358.41666666667 44.758286778398514 L -327.25 33.833333333333314 L -296.08333333333 53.604096834264425 L -264.91666666667 65.31030415890751 L -233.75 72.35418994413408 L -202.58333333333 74.63494723774053 L -171.41666666667 79.93991309745499 L -140.25 79.15865921787709 L -109.08333333333 77.65915580384853 L -77.916666666667 73.67728119180632 L -46.75 61.089013035381754 L -15.583333333333 70.27504655493482 L 15.583333333333 92.88100558659217 L 46.75 121.92600869025449 L 77.916666666667 154.22203600248292 L 109.08333333333 153.18876474239602 L 140.25 159.18677839851023 L 171.41666666667 156.23817504655494 L 202.58333333333 126.85294847920545 L 233.75 81.79224084419614 L 264.91666666667 48.65195530726257 L 296.08333333333 36.59292364990688 L 327.25 41.34345127250154 L 358.41666666667 55.75884543761637 L 383.41666666667 55.75884543761637" visibility="visible" data-z-index="2" class="highcharts-tracker-line" stroke-linejoin="round" stroke="rgba(192,192,192,0.0001)" stroke-width="52"></path></g><g data-z-index="10" class="highcharts-markers highcharts-series-0 highcharts-line-series  highcharts-tracker" transform="translate(20,5) scale(1 1)"><path fill="#f7f7f7" d="M 15 96 A 3 3 0 1 1 15.002999999500002 95.99999850000013 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 46 125 A 3 3 0 1 1 46.002999999500005 124.99999850000013 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 77 157 A 3 3 0 1 1 77.0029999995 156.99999850000012 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 109 156 A 3 3 0 1 1 109.0029999995 155.99999850000012 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 140 162 A 3 3 0 1 1 140.0029999995 161.99999850000012 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 171 159 A 3 3 0 1 1 171.0029999995 158.99999850000012 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 202 130 A 3 3 0 1 1 202.0029999995 129.99999850000012 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 233 85 A 3 3 0 1 1 233.0029999995 84.99999850000013 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 264 52 A 3 3 0 1 1 264.0029999995 51.999998500000125 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 296 40 A 3 3 0 1 1 296.0029999995 39.999998500000125 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 327 44 A 3 3 0 1 1 327.0029999995 43.999998500000125 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path><path fill="#f7f7f7" d="M 358 59 A 3 3 0 1 1 358.0029999995 58.999998500000125 Z" stroke="#4a90e2" stroke-width="2" opacity="1" class="highcharts-point"></path></g></g><text x="207" text-anchor="middle" class="highcharts-title" data-z-index="4" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="207" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-legend" data-z-index="7"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" visibility="hidden"></rect><g data-z-index="1"><g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" data-z-index="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" data-z-index="7"></g><g class="highcharts-plot-lines-100" data-z-index="100"><path fill="none" class="highcharts-plot-line "></path></g></svg><div class="highcharts-axis-labels highcharts-xaxis-labels" style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 28.0833px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">01</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 59.25px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">02</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 90.4167px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">03</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 121.583px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">04</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 152.75px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">05</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 183.917px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">06</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 215.083px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">07</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 246.25px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">08</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 277.417px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">09</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 308.583px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">10</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 339.75px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">11</span></span><span opacity="1" style="position: absolute; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif; font-size: 12px; white-space: nowrap; margin-left: 0px; margin-top: 0px; left: 370.917px; top: 214px; color: rgb(162, 162, 162); cursor: default; transform: rotate(0deg); transform-origin: 50% 12px; text-overflow: clip; opacity: 1;"><span classname="d_xlabel">12</span></span></div></div></div>
+                  </div>
+                  <div class="realtime-list-song">
+                      <ul class="z-hor-chart-list" id="home-chart-list-song">
+                      <li class="">    <div class="chart-item first">        <div class="z-card card-40">        <a href="/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html"></a>            <div class="prefix">                <div class="sort no-compare">                    <div class="sort-number">                        <span class="">1</span>                    </div>                </div>            </div>            <a href="/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html" title="Yêu Là Cưới" class="thumb-40">                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg" alt="Yêu Là Cưới">            </a>            <div class="card-info">                <div class="title "><a href="/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html">Yêu Là Cưới</a></div>                <div class="artist "><a href="/nghe-si/Phat-Ho" title="Phát Hồ">Phát Hồ</a>, <a href="/nghe-si/X2X" title="X2X">X2X</a>                </div>            </div>            <div class="prefix z-prefix-percent">                <div class="sort no-compare">                    <div class="sort-number">                        <span>40%</span>                    </div>                </div>            </div>        </div>    </div></li><li class="">    <div class="chart-item second">        <div class="z-card card-40">        <a href="/bai-hat/Chua-Bao-Gio-Em-Quen-Huong-Ly/ZU7B079F.html"></a>            <div class="prefix">                <div class="sort no-compare">                    <div class="sort-number">                        <span class="">2</span>                    </div>                </div>            </div>            <a href="/bai-hat/Chua-Bao-Gio-Em-Quen-Huong-Ly/ZU7B079F.html" title="Chưa Bao Giờ Em Quên" class="thumb-40">                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/9/5/d/c95d510864924eb7eff43c9b4cb19202.jpg" alt="Chưa Bao Giờ Em Quên">            </a>            <div class="card-info">                <div class="title "><a href="/bai-hat/Chua-Bao-Gio-Em-Quen-Huong-Ly/ZU7B079F.html">Chưa Bao Giờ Em Quên</a></div>                <div class="artist "><a href="/nghe-si/Nguyen-Huong-Ly" title="Hương Ly">Hương Ly</a>                </div>            </div>            <div class="prefix z-prefix-percent">                <div class="sort no-compare">                    <div class="sort-number">                        <span>32%</span>                    </div>                </div>            </div>        </div>    </div></li><li class="">    <div class="chart-item third">        <div class="z-card card-40">        <a href="/bai-hat/Thay-Long-DIMZ-TVk-NH4T/ZU7C8FDU.html"></a>            <div class="prefix">                <div class="sort no-compare">                    <div class="sort-number">                        <span class="">3</span>                    </div>                </div>            </div>            <a href="/bai-hat/Thay-Long-DIMZ-TVk-NH4T/ZU7C8FDU.html" title="Thay Lòng" class="thumb-40">                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/b/3/c/eb3cbc5d9759bae3c79e8e141c099c56.jpg" alt="Thay Lòng">            </a>            <div class="card-info">                <div class="title "><a href="/bai-hat/Thay-Long-DIMZ-TVk-NH4T/ZU7C8FDU.html">Thay Lòng</a></div>                <div class="artist "><a href="/nghe-si/DIMZ" title="DIMZ">DIMZ</a>, <a href="/nghe-si/TVk" title="TVk">TVk</a>, <a href="/nghe-si/NH4T" title="NH4T">NH4T</a>                </div>            </div>            <div class="prefix z-prefix-percent">                <div class="sort no-compare">                    <div class="sort-number">                        <span>28%</span>                    </div>                </div>            </div>        </div>    </div></li><li class="">    <div class="chart-item ">        <div class="z-card card-40">        <a href="/bai-hat/Em-La-Con-Thuyen-Co-Don-Thai-Hoc/ZU7UC9ZC.html"></a>            <div class="prefix">                <div class="sort no-compare">                    <div class="sort-number">                        <span class="">4</span>                    </div>                </div>            </div>            <a href="/bai-hat/Em-La-Con-Thuyen-Co-Don-Thai-Hoc/ZU7UC9ZC.html" title="Em Là Con Thuyền Cô Đơn" class="thumb-40">                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/b/5/c/f/b5cfe3d54669f19af4618cc5b9bc654e.jpg" alt="Em Là Con Thuyền Cô Đơn">            </a>            <div class="card-info">                <div class="title "><a href="/bai-hat/Em-La-Con-Thuyen-Co-Don-Thai-Hoc/ZU7UC9ZC.html">Em Là Con Thuyền Cô Đơn</a></div>                <div class="artist "><a href="/nghe-si/Thai-Hoc" title="Thái Học">Thái Học</a>                </div>            </div>        </div>    </div></li><li class="">    <div class="chart-item ">        <div class="z-card card-40">        <a href="/bai-hat/Khue-Moc-Lang-Huong-Ly-Jombie/ZUUECEIC.html"></a>            <div class="prefix">                <div class="sort no-compare">                    <div class="sort-number">                        <span class="">5</span>                    </div>                </div>            </div>            <a href="/bai-hat/Khue-Moc-Lang-Huong-Ly-Jombie/ZUUECEIC.html" title="Khuê Mộc Lang" class="thumb-40">                <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/2/6/1/d26117831a67fecf48f95c99823cecc6.jpg" alt="Khuê Mộc Lang">            </a>            <div class="card-info">                <div class="title "><a href="/bai-hat/Khue-Moc-Lang-Huong-Ly-Jombie/ZUUECEIC.html">Khuê Mộc Lang</a></div>                <div class="artist "><a href="/nghe-si/Nguyen-Huong-Ly" title="Hương Ly">Hương Ly</a>, <a href="/nghe-si/Jombie-IWZ9DFA6" title="Jombie">Jombie</a>                </div>            </div>        </div>    </div></li><div class="z-btn-text"><a href="/zing-chart/index.html">Xem Tất Cả</a></div></ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="z-new-songs fn-adtima-zone">
+<div class="container">
+  <div class="z-widget">
+      
+<div class="z-float-header">
+<a class="a-disabled z-box-title" title="Bài hát mới">
+  Bài hát mới
+  
+</a>
+
+</div>
+
+
+
+<div class="best-of-artist clearfix">
+<ul class="list-song">
+  
+  <li class=" ">
+<div class="z-card card-40" data-zone="1471803326255820809">
+  <a href="/bai-hat/Kieu-Ngao-Huy-Vac/ZU7B08DW.html" class=""></a>
+  <a href="/bai-hat/Kieu-Ngao-Huy-Vac/ZU7B08DW.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/0/3/7/4037cdb94683e45c289da00ca4db8ba5.jpg" alt="Kiêu Ngạo">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Kieu-Ngao-Huy-Vac/ZU7B08DW.html">Kiêu Ngạo</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Huy-Vac" title="Huy Vạc">Huy Vạc</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Cu-Noi-Yeu-Lan-Nay-Cukak-Remix-Lil-Z-CUKAK/ZU7C8WEE.html" class=""></a>
+  <a href="/bai-hat/Cu-Noi-Yeu-Lan-Nay-Cukak-Remix-Lil-Z-CUKAK/ZU7C8WEE.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/e/d/8/ded8adfe2d202f90ec6fe9101815eb7f.jpg" alt="Cứ Nói Yêu Lần Này (Cukak Remix)">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Cu-Noi-Yeu-Lan-Nay-Cukak-Remix-Lil-Z-CUKAK/ZU7C8WEE.html">Cứ Nói Yêu Lần Này (Cukak Remix)</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Lil-Z" title="Lil Z">Lil Z,</a>
+          
+          <a href="/nghe-si/CUKAK" title="CUKAK">CUKAK</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Mai-Em-Ve-Ben-Ay-Ngoc-Han/ZU7CWAF6.html" class=""></a>
+  <a href="/bai-hat/Mai-Em-Ve-Ben-Ay-Ngoc-Han/ZU7CWAF6.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/2/7/0/d270c66cefbc55e1c3adacb416508c8e.jpg" alt="Mai Em Về Bên Ấy">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Mai-Em-Ve-Ben-Ay-Ngoc-Han/ZU7CWAF6.html">Mai Em Về Bên Ấy</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Ngoc-Han" title="Ngọc Hân">Ngọc Hân</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Toi-Khong-Can-Truong-Sinh-Bat-Lao-Tao-Lu-Phu/ZU79DOBO.html" class=""></a>
+  <a href="/bai-hat/Toi-Khong-Can-Truong-Sinh-Bat-Lao-Tao-Lu-Phu/ZU79DOBO.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/a/6/f/4/a6f4b3f95ad10618943794c40e600a1c.jpg" alt="Tôi Không Cần Trường Sinh Bất Lão">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Toi-Khong-Can-Truong-Sinh-Bat-Lao-Tao-Lu-Phu/ZU79DOBO.html">Tôi Không Cần Trường Sinh Bất Lão</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Tao-Lu-Phu" title="Tào Lữ Phụ">Tào Lữ Phụ</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Nhu-Ang-May-Troi-T-Passion/ZU7CA6D7.html" class=""></a>
+  <a href="/bai-hat/Nhu-Ang-May-Troi-T-Passion/ZU7CA6D7.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/3/2/c/732cf2d978935cb6d25830fc10df8c4d.jpg" alt="Như Áng Mây Trời">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Nhu-Ang-May-Troi-T-Passion/ZU7CA6D7.html">Như Áng Mây Trời</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/T-Passion" title="T-Passion">T-Passion</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Cau-Chuyen-Cuoi-DuUyen/ZU7C9IEZ.html" class=""></a>
+  <a href="/bai-hat/Cau-Chuyen-Cuoi-DuUyen/ZU7C9IEZ.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/1/9/8/2198514833d1aa56519e5c0f93302237.jpg" alt="Câu Chuyện Cười">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Cau-Chuyen-Cuoi-DuUyen/ZU7C9IEZ.html">Câu Chuyện Cười</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/DuUyen" title="DuUyen">DuUyen</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Tinh-Yeu-Chan-Thanh-Truong-Thao-Nhi/ZU79BFW7.html" class=""></a>
+  <a href="/bai-hat/Tinh-Yeu-Chan-Thanh-Truong-Thao-Nhi/ZU79BFW7.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/6/d/0/6/6d0635b16609272e0a0f01c69ebc4096.jpg" alt="Tình Yêu Chân Thành">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Tinh-Yeu-Chan-Thanh-Truong-Thao-Nhi/ZU79BFW7.html">Tình Yêu Chân Thành</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Truong-Thao-Nhi" title="Trương Thảo Nhi">Trương Thảo Nhi</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Like-the-first-moment-i-met-you-Kim-Feel/ZU7C7DAO.html" class=""></a>
+  <a href="/bai-hat/Like-the-first-moment-i-met-you-Kim-Feel/ZU7C7DAO.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/7/1/5/771502fbeddeeff0428733c0dafeedd2.jpg" alt="Like the first moment i met you">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Like-the-first-moment-i-met-you-Kim-Feel/ZU7C7DAO.html">Like the first moment i met you</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Kim-Feel" title="Kim Feel">Kim Feel</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html" class=""></a>
+  <a href="/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/9/d/a/49da6a1d6cf13a42e77bc3a945d9dd6b.jpg" alt="Yêu Là Cưới">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Yeu-La-Cuoi-Phat-Ho-X2X/ZU6IEI66.html">Yêu Là Cưới</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Phat-Ho" title="Phát Hồ">Phát Hồ,</a>
+          
+          <a href="/nghe-si/X2X" title="X2X">X2X</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+  <li class=" ">
+<div class="z-card card-40">
+  <a href="/bai-hat/Hai-Dua-Nay-Met-Ghe-Long-Non-La-The-199X/ZU7O9DFB.html" class=""></a>
+  <a href="/bai-hat/Hai-Dua-Nay-Met-Ghe-Long-Non-La-The-199X/ZU7O9DFB.html" class="thumb-50 mar-right-10">
+      <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/1/4/2/f1420c92f103db82464d108b740c9684.jpg" alt="Hai Đứa Này Mệt Ghê">
+  </a>
+  <div class="card-info">
+      <div class="title ">
+          <a href="/bai-hat/Hai-Dua-Nay-Met-Ghe-Long-Non-La-The-199X/ZU7O9DFB.html">Hai Đứa Này Mệt Ghê</a>
+          
+      </div>
+      <div class="artist ">
+          
+          <a href="/nghe-si/Long-Non-La" title="Long Nón Lá">Long Nón Lá,</a>
+          
+          <a href="/nghe-si/The-199X" title="The 199X">The 199X</a>
+          
+      </div>
+  </div>
+</div>
+</li>
+  
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+</section>
+
+
+<section class="fn-adtima-zone">
+<div class="container mar-top-20">
+  <div clas="sub-container pad-top-40">
+      
+<div class="z-float-header">
+<a href="/the-loai-album/Viet-Nam/IWZ9Z08I.html" class=" z-box-title" title="Album hot">
+  Album hot
+  
+  <i class="icon ic-go-right"></i>
+  
+</a>
+
+</div>
+
+
+
+<div class="row fn-load-more-list">
+
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album">
+  <a href="/album/Minh-Lac-Nhau-Muon-Doi-Single-Pham-Sac-Lenh/69U9OD7C.html"></a>
+  <a class="card-210" href="/album/Minh-Lac-Nhau-Muon-Doi-Single-Pham-Sac-Lenh/69U9OD7C.html" title="Mình Lạc Nhau Muôn Đời (Single)">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/2/c/a/4/2ca4240107f5ed929b3182621c85c284.jpg" alt="Mình Lạc Nhau Muôn Đời (Single)">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Minh-Lac-Nhau-Muon-Doi-Single-Pham-Sac-Lenh/69U9OD7C.html" class="z-multi-line-1">Mình Lạc Nhau Muôn Đời (Single)</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Pham-Sac-Lenh" title="Phạm Sắc Lệnh">Phạm Sắc Lệnh</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album">
+  <a href="/album/Nguoi-Ta-Noi-Single-GiGi-Huong-Giang/69U9UWIA.html"></a>
+  <a class="card-210" href="/album/Nguoi-Ta-Noi-Single-GiGi-Huong-Giang/69U9UWIA.html" title="Người Ta Nói (Single)">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/3/9/7/9/39795e79c06143128c49e665b2aef6c8.jpg" alt="Người Ta Nói (Single)">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Nguoi-Ta-Noi-Single-GiGi-Huong-Giang/69U9UWIA.html" class="z-multi-line-1">Người Ta Nói (Single)</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/GiGi-Huong-Giang" title="GiGi Hương Giang">GiGi Hương Giang</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album">
+  <a href="/album/Cam-On-Ton-Thuong-Single-Thuong-Vo-Pham-Nguyen-Ngoc-ACV/69U9U68Z.html"></a>
+  <a class="card-210" href="/album/Cam-On-Ton-Thuong-Single-Thuong-Vo-Pham-Nguyen-Ngoc-ACV/69U9U68Z.html" title="Cảm Ơn Tổn Thương (Single)">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/c/2/2/6/c2261a17ba6cb3b8d114eeed65f82352.jpg" alt="Cảm Ơn Tổn Thương (Single)">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Cam-On-Ton-Thuong-Single-Thuong-Vo-Pham-Nguyen-Ngoc-ACV/69U9U68Z.html" class="z-multi-line-1">Cảm Ơn Tổn Thương (Single)</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Thuong-Vo-Pham-Nguyen-Ngoc-ACV" title="Thương Võ">Thương Võ,</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album" data-zone="2392785975424545528">
+  <a href="/album/Dau-Ta-Con-Yeu-Single-Reddy/69U0BZAB.html"></a>
+  <a class="card-210" href="/album/Dau-Ta-Con-Yeu-Single-Reddy/69U0BZAB.html" title="Dẫu Ta Còn Yêu (Single)">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/9/b/f/e/9bfea7b00a6d202be1c954ccadb9541c.jpg" alt="Dẫu Ta Còn Yêu (Single)">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Dau-Ta-Con-Yeu-Single-Reddy/69U0BZAB.html" class="z-multi-line-1">Dẫu Ta Còn Yêu (Single)</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Reddy" title="Reddy">Reddy</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album">
+  <a href="/album/Thuong-Lofi-Version-Single-Quoc-Thien/69U6WZAB.html"></a>
+  <a class="card-210" href="/album/Thuong-Lofi-Version-Single-Quoc-Thien/69U6WZAB.html" title="Thương (Lofi Version) (Single)">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/a/1/b/0/a1b062f6a3e2452bf3b9f3731d344ecb.jpg" alt="Thương (Lofi Version) (Single)">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Thuong-Lofi-Version-Single-Quoc-Thien/69U6WZAB.html" class="z-multi-line-1">Thương (Lofi Version) (Single)</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Quoc-Thien" title="Quốc Thiên">Quốc Thiên</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="col-md-6 mar-bottom-30">
+<div class="col-album" data-zone="146082956479787773">
+  <a href="/album/Hay-La-Chia-Tay-Single-Nguyen-Thac-Bao-Ngoc/69U9O89W.html"></a>
+  <a class="card-210" href="/album/Hay-La-Chia-Tay-Single-Nguyen-Thac-Bao-Ngoc/69U9O89W.html" title="Hay Là Chia Tay (Single)">
+      <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/3/7/0/1/3701dd92fd85483f29d1ff96d0b0940e.jpg" alt="Hay Là Chia Tay (Single)">
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/album/Hay-La-Chia-Tay-Single-Nguyen-Thac-Bao-Ngoc/69U9O89W.html" class="z-multi-line-1">Hay Là Chia Tay (Single)</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Nguyen-Thac-Bao-Ngoc" title="Nguyễn Thạc Bảo Ngọc">Nguyễn Thạc Bảo Ngọc</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+</section>
+
+
+<section class="z-video-hot fn-adtima-zone">
+<div class="container">
+  <div class="z-widget">
+      <div class="">
+          
+<div class="z-float-header">
+<a href="/the-loai-video/Viet-Nam/IWZ9Z08I.html" class=" z-box-title" title="MV hot">
+  MV hot
+  
+  <i class="icon ic-go-right"></i>
+  
+</a>
+
+</div>
+
+
+
+
+<div class="module-inside clearfix fn-load-more-list">
+
+<div class=" mar-bottom-30">
+<div class="col-album">
+  <a href="/video-clip/Tup-Leu-Vang-Nguyen-Dinh-Vu-ACV/ZUZBBOFF.html"></a>
+  <a class="card-210" href="/video-clip/Tup-Leu-Vang-Nguyen-Dinh-Vu-ACV/ZUZBBOFF.html" title="Túp Lều Vàng">
+      <div class="z-cover" style="background: url(https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/d/6/e/6/d6e6201323fed8fb16886a3f428fc4f7.jpg) center center / cover no-repeat;padding-bottom: 56%;width: 100%;height: auto;">
+      </div>
+      
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/video-clip/Tup-Leu-Vang-Nguyen-Dinh-Vu-ACV/ZUZBBOFF.html" class="z-multi-line-1" title="Túp Lều Vàng">Túp Lều Vàng</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Nguyen-Dinh-Vu">Nguyễn Đình Vũ,</a>
+          
+          <a href="/nghe-si/ACV-Music">ACV</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+<div class=" mar-bottom-30">
+<div class="col-album" data-zone="714048345076101887">
+  <a href="/video-clip/Lua-Chon-Cua-Anh-Thuong-Vo-ACV/ZU0WFOIF.html"></a>
+  <a class="card-210" href="/video-clip/Lua-Chon-Cua-Anh-Thuong-Vo-ACV/ZU0WFOIF.html" title="Lựa Chọn Của Anh">
+      <div class="z-cover" style="background: url(https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/6/8/9/b/689b9f49c7ceb4ca4dc326571bba4e2a.jpg) center center / cover no-repeat;padding-bottom: 56%;width: 100%;height: auto;">
+      </div>
+      
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/video-clip/Lua-Chon-Cua-Anh-Thuong-Vo-ACV/ZU0WFOIF.html" class="z-multi-line-1" title="Lựa Chọn Của Anh">Lựa Chọn Của Anh</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Thuong-Vo">Thương Võ,</a>
+          
+          <a href="/nghe-si/ACV-Music">ACV</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+<div class=" mar-bottom-30">
+<div class="col-album">
+  <a href="/video-clip/Nhung-Loi-Doi-Gian-Vicky-Nhung/ZU6IDD7W.html"></a>
+  <a class="card-210" href="/video-clip/Nhung-Loi-Doi-Gian-Vicky-Nhung/ZU6IDD7W.html" title="Những Lời Dối Gian">
+      <div class="z-cover" style="background: url(https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/4/7/7/5/47755662b9802742229217de267b24fe.jpg) center center / cover no-repeat;padding-bottom: 56%;width: 100%;height: auto;">
+      </div>
+      
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/video-clip/Nhung-Loi-Doi-Gian-Vicky-Nhung/ZU6IDD7W.html" class="z-multi-line-1" title="Những Lời Dối Gian">Những Lời Dối Gian</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Vicky-Nhung">Vicky Nhung</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+<div class=" mar-bottom-30">
+<div class="col-album">
+  <a href="/video-clip/Sai-Cach-Yeu-Le-Bao-Binh/ZUOZE7EZ.html"></a>
+  <a class="card-210" href="/video-clip/Sai-Cach-Yeu-Le-Bao-Binh/ZUOZE7EZ.html" title="Sai Cách Yêu">
+      <div class="z-cover" style="background: url(https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/4/d/b/f/4dbf769079e956c3d104130af83ae2c5.jpg) center center / cover no-repeat;padding-bottom: 56%;width: 100%;height: auto;">
+      </div>
+      
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/video-clip/Sai-Cach-Yeu-Le-Bao-Binh/ZUOZE7EZ.html" class="z-multi-line-1" title="Sai Cách Yêu">Sai Cách Yêu</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Le-Bao-Binh">Lê Bảo Bình</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+<div class=" mar-bottom-30">
+<div class="col-album" data-zone="1282077488166957809">
+  <a href="/video-clip/Khi-Co-Don-Em-Nho-Ai-Vicky-Nhung/ZUZ89OB9.html"></a>
+  <a class="card-210" href="/video-clip/Khi-Co-Don-Em-Nho-Ai-Vicky-Nhung/ZUZ89OB9.html" title="Khi Cô Đơn Em Nhớ Ai">
+      <div class="z-cover" style="background: url(https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/0/c/e/5/0ce507ca0dac1fbed87fd1bd1f88273a.jpg) center center / cover no-repeat;padding-bottom: 56%;width: 100%;height: auto;">
+      </div>
+      
+  </a>
+  <div class="card-info">
+      <div class="title">
+          <a href="/video-clip/Khi-Co-Don-Em-Nho-Ai-Vicky-Nhung/ZUZ89OB9.html" class="z-multi-line-1" title="Khi Cô Đơn Em Nhớ Ai">Khi Cô Đơn Em Nhớ Ai</a>
+      </div>
+      <div class="artist">
+          
+          <a href="/nghe-si/Vicky-Nhung">Vicky Nhung</a>
+          
+      </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+</section>
+
+
+
+  </main>
+  <footer id="footer" class="bg-footer">
+<div class="container">
+  <div class="sub-container pad-top-50 pad-bottom-70 bor-top">
+      <div class="row">
+          <div class="col-md-12 z-center">
+              <div class="z-license-logo clearfix">
+                  <span class="z-logo"></span>
+                  <div class="z-license-info">
+                      <div class="z-copyright">
+                          Một sản phẩm của Zalo
+                      </div>
+                  </div>
+              </div>
+              <ul class="z-nav-footer">
+                  <li><a class="z-link open-introduce" title="Giới thiệu">Giới thiệu</a></li>
+                  <li><div class="z-link z-link-special">•</div></li>
+                  <li><a href="https://mp3.zing.vn/huong-dan/contact" class="z-link" title="Liên hệ" target="_blank">Liên hệ</a></li>
+                  <li><div class="z-link z-link-special">•</div></li>
+                  <li><a href="https://adtima.vn/lien-he?utm_source=zingmp3&amp;utm_medium=footer" class="z-link" title="Quảng cáo" target="_blank">Quảng cáo</a></li>
+                  <br>
+                  <li><a href="https://docs.google.com/forms/d/1MBR_N1S1vB7LKbSbY0C-03kjDyM-Lp6fGLoyoebJTq0/viewform?edit_requested=true" class="z-link" title="Góp ý" target="_blank">Góp ý</a></li>
+                  <li><div class="z-link z-link-special">•</div></li><li><a href="https://mp3.zing.vn/tnc" class="z-link" title="Thỏa thuận sử dụng" target="_blank">Thỏa thuận sử dụng</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <a class="z-btn-open-app float-btn-app" href="https://zingmp3.onelink.me/43Aw?pid=ZingMP3&amp;c=BottomBanner&amp;deep_link_value=zingmp3%3A%2F%2F&amp;af_dp=zingmp3%3A%2F%2F">
+      <img src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/logo-mp-3.png" alt="Zing Mp3"><span>Trải nghiệm Zing MP3 tốt nhất trên app</span>
+  </a>
+</div>
+</footer>
+<section class="z-section z-section-hide-up section-search">
+<div class="container">
+  <div class="">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="z-header-search-wrap">
+                  <div class="z-input-group header-search-group">
+                      <label>
+                          <i class="icon ic-search"></i>
+                          <form action="/tim-kiem/index.html" class="input-wrapper" id="fn-search-submit">
+                              <input type="search" name="q" id="input-search" class="form-control" placeholder="Tìm kiếm" value="">
+                          </form>
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row mar-top-15 history-container" data-url="/tim-kiem/index.html?q=" style="display: none;">
+          <div class="col-md-12">
+              <div class="z-sub-title">
+                  Lịch sử tìm kiếm
+              </div>
+              <div class="z-list-search clearfix history-list">
+              </div>
+          </div>
+      </div>
+      <div class="row mar-top-15 hot-key-container" data-url="/tim-kiem/index.html?q=">
+          <div class="col-md-12">
+              <div class="z-sub-title">
+                  Hot Key
+              </div>
+              <div class="z-list-search clearfix hot-key-list">
+              <a href="/tim-kiem/index.html?q=adele" class="z-list-search z-list-item">adele</a><a href="/tim-kiem/index.html?q=ch%C6%B0a%20bao%20gi%E1%BB%9D" class="z-list-search z-list-item">chưa bao giờ</a><a href="/tim-kiem/index.html?q=y%C3%AAu%20l%C3%A0%20c%C6%B0%E1%BB%9Bi" class="z-list-search z-list-item">yêu là cưới</a><a href="/tim-kiem/index.html?q=zing%20choice" class="z-list-search z-list-item">zing choice</a><a href="/tim-kiem/index.html?q=zingchart" class="z-list-search z-list-item">#zingchart</a></div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+<section class="z-modal z-download-vip-modal modal-open-app" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true" id="copyright-content-1">
+<div class="z-modal-inner">
+  <div class="z-modal-content">
+      <div class="z-modal-zone">
+          <div class="title-use-app">Để sử dụng đầy đủ tất cả các tính năng, bạn vui lòng sử dụng ứng dụng Zing MP3</div>
+          <div class="z-group-btn">
+              <a href="https://zingmp3.onelink.me/43Aw?pid=ZingMP3&amp;c=BottomBanner&amp;deep_link_value=zingmp3%3A%2F%2F&amp;af_dp=zingmp3%3A%2F%2F" class="z-btn radius-4 z-btn-use-app float-btn-app">
+                  <i class="icon ic-logo-mp3"></i>
+                  Mở Zing MP3
+              </a>
+              <a href="#!" class="z-btn radius-4 z-btn-cancel text-upper mar-top-10">
+                  Hủy
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+<section class="z-modal z-download-vip-modal" id="js-popup-foreigner" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+<div class="z-modal-inner">
+  <div class="clearfix no-line-height">
+      <a class="z-modal-close">
+          <i class="icon ic-close"></i>
+      </a>
+  </div>
+  <div class="z-modal-content">
+      <div class="z-buy-download-zone pad-0">
+          <div class="z-title">Thông báo</div>
+          <div class="z-copyright-content open-app-modal-custom-content">
+              Hiện tại một số tính năng trên Zing MP3 VIP không hỗ trợ sử dụng ở nước ngoài.
+          </div>
+          <div class="zone-button"></div>
+          <a href="#!" class="z-login-btn z-btn-cancel">Đã hiểu</a>
+      </div>
+  </div>
+</div>
+</section>
+<section class="z-modal z-download-vip-modal modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true" id="copyright-content-1">
+<div class="z-modal-inner">
+  <div class="z-modal-content">
+      <div class="z-modal-zone">
+          <div class="title-use-app">Vui lòng đăng nhập để sử dụng tính năng này</div>
+          <div class="z-group-btn mar-top-10">
+              <a href="#!" onclick="ZaloLoginWidget.login()" class="text-upper z-btn radius-4">
+                  Đăng nhập
+              </a>
+              <a href="#!" class="z-btn radius-4 z-btn-cancel text-upper mar-top-10">
+                  Hủy
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+<section class="z-modal z-download-vip-modal modal-introduce" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true" id="copyright-content-1">
+<div class="z-modal-inner z-no-pad">
+  <div class="z-modal-content">
+      <div class="z-buy-download-zone" style="padding: 30px 35px;">
+          <div class="z-zingmp3-logo"></div>
+          <div class="z-copyright-content">
+              Giấy phép mạng xã hội: 314/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 17/7/2015
+              <br>
+              <br>
+              Chủ quản: Công Ty Cổ Phần VNG
+              <br>
+              52 Nguyễn Ngọc Lộc, Phường 14, Quận 10, TP. Hồ Chí Minh
+          </div>
+          <a class="z-login-btn close-modal">Đóng</a>
+      </div>
+  </div>
+</div>
+</section>
+<section class="z-modal z-download-vip-modal modal-share" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true" id="copyright-content-1">
+<div class="z-modal-inner">
+  <div class="z-modal-content">
+      <div class="z-modal-zone">
+          <div class="title-left mar-bottom-20">
+              <div class="z-title">
+                  Chia sẻ
+              </div>
+          </div>
+          <ul class="list-social clearfix" area="content">
+              <li class="mar-bottom-10 fn-share fn-share-zalo" data-url="zaloshareext://shareext?type=9&amp;version=1&amp;schema=sample://&amp;appname=Zing MP3&amp;url=https://zingmp3.vn/">
+                  <div class="z-share-logo mar-right-15">
+                      <img src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/zalo.svg">
+                  </div>
+                  <a href="javascript:void(0)">Zalo</a>
+              </li>
+              <li class="mar-bottom-10 fn-share fn-share-facebook" data-url="https://www.facebook.com/sharer/sharer.php?u=https://zingmp3.vn/">
+                  <div class="z-share-logo mar-right-15">
+                      <img src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/facebook.svg">
+                  </div>
+                  <a href="javascript:void(0)">Facebook</a>
+              </li>
+              <li class="fn-share-copy-link">
+                  <div value="" id="fn-share-content" style="position: absolute; z-index: -1; top: 0; opacity: 0"></div>
+                  <div class="z-share-logo z-copy-link mar-right-15">
+                      <i class="ic ic-link"></i>
+                  </div>
+                  <a href="javascript:void(0)">
+                      Copy Link</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+</section>
+<div class="z-notify z-indicate z-notify-show fn-family-success" style="top: 30%; display: none;">
+<div class="z-notify-content">
+  <i class="icon ic-svg-indicate-play"></i>
+  <span class="z-notify-text">
+      Bạn đã được thêm vào VIP Family thành công
+  </span>
+</div>
+</div>
+<div class="z-notify z-indicate z-notify-show fn-family-fail" style="top: 30%; display: none;">
+<div class="z-notify-content">
+  <i class="icon ic-svg-indicate-error"></i>
+  <span class="z-notify-text">
+      Thêm vào VIP Family không thành công. Liên hệ chủ gói để mời lại.
+  </span>
+</div>
+</div>
+<div class="z-notify z-indicate z-notify-show fn-family-expired" style="top: 30%; display: none;">
+<div class="z-notify-content">
+  <i class="icon ic-svg-indicate-error"></i>
+  <span class="z-notify-text">
+      Lời mời đã hết hạn. Thông báo đến chủ Gói để thực hiện thao tác mời lại.
+  </span>
+</div>
+</div>
+<div class="z-notify z-indicate z-notify-show fn-share-copied" style="top: 30%; display: none;">
+<div class="z-notify-content">
+  <i class="icon ic-svg-indicate-play"></i>
+  <span class="z-notify-text">
+      Đã copy URL
+  </span>
+</div>
+</div>
+<div class="z-notify z-indicate z-notify-show fn-custom-notify" style="top: 30%; display: none;">
+<div class="z-notify-content">
+  <i class="icon ic-svg-indicate-play"></i>
+  <span class="z-notify-text fn-custom-notify-title">
+  </span>
+</div>
+</div>
+<section class="z-modal z-modal-downapp" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true" id="z-modal-downapp">
+<div class="z-modal-inner">
+  <div class="close-btn-wrapper close-modal"><i class="icon ic-close"></i> Đóng</div>
+  <div class="z-modal-content">
+      <a class="z-image-wrapper float-btn-app" href="https://zingmp3.onelink.me/43Aw?pid=ZingMP3&amp;c=BottomBanner&amp;deep_link_value=zingmp3%3A%2F%2F&amp;af_dp=zingmp3%3A%2F%2F" target="_blank">
+          <img src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/images/banner.png" alt="banner-downapp">
+      </a>
+  </div>
+</div>
+</section>
+  <script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/jquery/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/jquery/jquery.cookie.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/crypto-js.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/zmp3.core.0.1.44.min.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/zmp3.log.0.0.4-10.min.js"></script>
+<!--<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/loadtestlpkalive.js"></script>-->
+<script>
+
+window.adtimaConfig = {
+  contentId: 'mobile_other_m.zingmp3.vn'
+}
+
+
+function iOS() {
+  return (
+          [
+              "iPad Simulator",
+              "iPhone Simulator",
+              "iPod Simulator",
+              "iPad",
+              "iPhone",
+              "iPod",
+          ].includes(navigator.platform) ||
+          // iPad on iOS 13 detection
+                  (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+                  );
+}
+$(document).ready(function () {
+  /******Menu and Nav Events****/
+  function offMenuNav() {
+      setTimeout(function () {
+          $('.z-menu-navigation').removeClass('z-show');
+      }, 200);
+      $('body').removeClass('z-hide-scroll');
+      $('.z-menu-navigation').addClass('z-no-background');
+      $('.z-menu-inner').removeClass('z-show');
+      //put this when close popup and show scrollbar in body
+      var targetElement = document.getElementById("menu-navigation"); //only popup can scroll
+      window.bodyScrollLock && window.bodyScrollLock.enableBodyScroll(targetElement);
+  }
+  function onMenuNav() {
+      $('body').addClass('z-hide-scroll');
+      $('.z-menu-navigation').addClass('z-show');
+      $('.z-menu-navigation').removeClass('z-no-background');
+      setTimeout(function () {
+          $('.z-menu-inner').addClass('z-show')
+      }, 50);
+      var targetElement = document.getElementById("menu-navigation"); //only popup can scroll
+      //put this when popup opens, to stop body scrolling
+      window.bodyScrollLock && window.bodyScrollLock.disableBodyScroll(targetElement);
+  }
+  $('.z-menu-slide .icon, .user-profile-container .thumb-30 ').click(function (e) {
+      e.preventDefault();
+      onMenuNav();
+  })
+  $('.z-close-btn').click(function (e) {
+      offMenuNav();
+  })
+  $(".z-menu-navigation").click(function (e) {
+      if (e.target.className.indexOf("z-menu-navigation") > -1) {
+          offMenuNav();
+      }
+  });
+  $('.z-menu-content li').click(function () {
+      $(this).find('.z-menu-item')[0].click();
+  })
+  /******End Menu and Nav Events****/
+
+
+  /******Show Popup Events****/
+  String.prototype.truncString = function (max, add) {
+      add = add || '...';
+      return (this.length > max ? this.substring(0, max) + add : this);
+  };
+  $('.z-btn-cancel, .close-modal, .z-modal-close').click(function () {
+      hideModal();
+  })
+  $('.open-introduce').click(function () {
+      showModal('.modal-introduce');
+  });
+
+  $('.z-modal').click(function (e) {
+      if (e.target.className.indexOf('z-modal ') >= 0) {
+          hideModal();
+      }
+  });
+
+  $('.ic-share').click(function () {
+      showModal('.modal-share');
+  })
+
+  $('.fn-share-copy-link').click(function () {
+      var url = MP3.MAIN_URL + location.pathname;
+      if ($('#fn-share-content').attr('data-share')) {
+          url = $('#fn-share-content').attr('data-share');
+      }
+
+      var inputShare = document.querySelector('#fn-share-content');
+      inputShare.innerHTML = url;
+      var range = document.createRange();
+      range.selectNode(inputShare);
+      window.getSelection().addRange(range);
+      try {
+          var successful = document.execCommand('copy');
+          var msg = successful ? 'successful' : 'unsuccessful';
+          $('.fn-share-copied').show();
+          // $('.z-modal').removeClass('z-show');
+          hideModal();
+          setTimeout(function () {
+              $('.fn-share-copied').fadeOut("show");
+          }, 2000);
+          console.log('Copy email command was ' + msg);
+      } catch (err) {
+          console.log('Oops, unable to copy');
+      }
+      window.getSelection().removeAllRanges();
+  })
+
+  $('.btn-open-app').click(function () {
+      var redirect = $(this).attr('href');
+      if (isEmpty(redirect) || redirect == '#!' || redirect == 'javascript:void(0)') {
+          showModal('.modal-open-app');
+          return false;
+      }
+  });
+
+  $('.z-btn-use-app.float-btn-app').click(function () {
+      hideModal();
+  })
+  /******End Popup Events****/
+
+  //*********search button
+  var isSearching = false;
+  var showSearchSection = function () {
+      isSearching = !isSearching;
+      if (isSearching) {
+          $('.section-search').removeClass('z-section-hide-up')
+          $('.section-search').addClass('z-section-show-down');
+          $('.z-menu-bar, #main-body').hide();
+          $('#input-search').focus();
+          $('#icon-header-search').removeClass('ic-search');
+          $('#icon-header-search').addClass('ic-close');
+      } else {
+          $('.section-search').removeClass('z-section-show-down');
+          $('.section-search').addClass('z-section-hide-up');
+          $('.z-menu-bar, #main-body').show();
+          $('#icon-header-search').removeClass('ic-close');
+          $('#icon-header-search').addClass('ic-search');
+      }
+  }
+  $('#icon-header-search').click(showSearchSection);
+  $('#input-header-search').focus(showSearchSection);
+  //******End Search***********//
+
+
+  // Redirect if query have p=t
+  var urlParams = new URLSearchParams(window.location.search);
+  var isRedirect = urlParams.get('app');
+ 
+  if (isRedirect === 'true') {
+      showModal('.z-modal-downapp');
+       var isIOS = iOS();
+       var userAgent = navigator.userAgent.toLowerCase(); 
+       var isFromApp = /zmp3/.test(userAgent);
+       if(isIOS && !isFromApp) {
+          var utmSource = urlParams.get('utm_source');
+          var urlRedirect = "https://apps.apple.com/app/apple-store/id992357547?pt=53354802&ct=" + utmSource + "&mt=8";
+          $(".float-btn-app").attr("href", urlRedirect);
+          setTimeout(function () {
+              location.href = urlRedirect;
+          }, 500);
+      }
+  }
+})
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function (f, b, e, v, n, t, s) {
+  if (f.fbq)
+      return;
+  n = f.fbq = function () {
+      n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+  };
+  if (!f._fbq)
+      f._fbq = n;
+  n.push = n;
+  n.loaded = !0;
+  n.version = '2.0';
+  n.queue = [];
+  t = b.createElement(e);
+  t.async = !0;
+  t.src = v;
+  s = b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t, s)
+}(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '676170256203936');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=676170256203936&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+  <script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/IntersectionObserver.min.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/plugin/highcharts.js"></script>
+<script type="text/javascript" src="//static-zmp3.zadn.vn/skins/zmp3-mobile-v5.2/js/zmp3.chart.0.0.17.min.js"></script>
+<script>
+if ($('#slider-main')) {
+  var swiper;
+  function renderSlide(loop = true) {
+      if (swiper instanceof Swiper) {
+          swiper.destroy(true);
+      }
+      swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          speed: 350,
+          loop: loop,
+          pagination: {
+              el: '.swiper-pagination',
+          },
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+          }
+      });
+      if (!loop) {
+          swiper.on('slideChange', function (e) {
+              if (swiper.isEnd) {
+                  setTimeout(function () {
+                      swiper.slideTo(0, 350);
+                  }, 5000);
+              }
+          });
+  }
+  }
+  renderSlide(false);
+}
+</script>      
+  <script>
+      function gup(name, url) {
+          if (!url)
+              url = location.href;
+          name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+          var regexS = "[\\?&]" + name + "=([^&#]*)";
+          var regex = new RegExp(regexS);
+          var results = regex.exec(url);
+          return results == null ? null : results[1];
+      }
+
+      $(document).ready(function () {
+          var family_vip_notify = gup('family-vip-notify');
+          if (family_vip_notify) {
+              switch (family_vip_notify) {
+                  case '1':
+                      $('.fn-family-success').show();
+                      break;
+                  case '-1':
+                      $('.family-error').show();
+                      break;
+                  case '-2':
+                      $('.family-expired').show();
+                      break;
+              }
+              setTimeout(function () {
+                  $('.z-notify-show').fadeOut("show");
+              }, 5000);
+              var newURL = location.href.split("?")[0];
+              window.history.pushState('object', document.title, newURL);
+          }
+      });
+  </script>
+  
+
+</body></html>
